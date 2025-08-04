@@ -1,0 +1,1131 @@
+Copyright (C) 2025 AIDC-AI
+This project incorporates components from the Open Source Software below. 
+The original copyright notices and the licenses under which we received such components are set forth below for informational purposes. 
+
+Open Source Software Licensed under the Unlicense License:
+--------------------------------------------------------------------
+1. pycryptodome 3.21.0 https://pypi.org/project/pycryptodome
+2. filelock 3.18.0 https://pypi.org/project/filelock
+3. filelock 3.17.0 https://pypi.org/project/filelock
+Terms of the Unlicense: 
+--------------------------------------------------------------------
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or distribute this software, either in source code form or as a compiled binary, for any purpose, commercial or non-commercial, and by any means.
+
+In jurisdictions that recognize copyright laws, the author or authors of this software dedicate any and all copyright interest in the software to the public domain. We make this dedication for the benefit of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of relinquishment in perpetuity of all present and future rights to this software under copyright law.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+For more information, please refer to <http://unlicense.org/>
+
+
+
+Open Source Software Licensed under the BSD-3-clause License:
+--------------------------------------------------------------------
+1. python-dateutil 2.9.0.post0 https://pypi.org/project/python-dateutil
+Copyright 2017- Paul Ganssle <paul@ganssle.io>
+2. gitdb 4.0.12 https://pypi.org/project/gitdb
+Copyright (C) 2010; 2011 Sebastian Thiel and contributors
+3. packaging 24.2 https://pypi.org/project/packaging
+Terms of the BSD-3-clause: 
+--------------------------------------------------------------------
+
+
+
+Open Source Software Licensed under the BSD-2-Clause License:
+--------------------------------------------------------------------
+1. torch 2.3.0+cu118 
+2. pyasn1 0.6.1 https://pypi.org/project/pyasn1
+(c) 2005-2017; [Ilya Etingof](mailto:etingof@gmail.com).
+(c) 2005-2019; [Ilya Etingof](mailto:etingof@gmail.com).
+(c) 2005-2018; [Ilya Etingof](mailto:etingof@gmail.com).
+3. torch 2.3.1 https://pypi.org/project/torch
+Copyright (c) 2016-     Facebook; Inc            (Adam Paszke)
+Copyright (c) 2016 Facebook Inc..
+Copyright (c) 2016-     Facebook; Inc            (Adam Paszke).
+Copyright (c) 2016 Facebook Inc.
+4. Pygments 2.19.1 https://pypi.org/project/pygments
+Copyright (c) 2006-2021 by the respective authors (see AUTHORS file).
+Copyright (c) 2006-2022 by the respective authors (see AUTHORS file).
+5. pycryptodome 3.21.0 https://pypi.org/project/pycryptodome
+6. torch 1.10.0 https://pypi.org/project/torch
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2014; The Regents of the University of California (Regents)
+Copyright (c) 2016-     Facebook; Inc            (Adam Paszke)
+Copyright (c) 2015 Yangqing Jia
+Copyright(c) 2015; 2016 the respective contributors
+Copyright (c) 2015 Google Inc.
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert; Samy Bengio; Johnny Mariethoz)
+Copyright (c) 2014-     Facebook; Inc            (Soumith Chintala)
+Copyright (c) 2014; the respective contributors
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright(c) 2013; 2014; 2015; the respective contributors
+Copyright 2019-2020 Kakao Brain
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert; Leon Bottou; Iain Melvin; Jason Weston)
+Copyright (c) 2018; Steven Moshier
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2016-present; Facebook Inc. All rights reserved.
+Copyright (c) 2016 Facebook Inc.
+7. bloom 0.13.0 
+8. torchaudio 0.9.0 https://pypi.org/project/torchaudio
+Copyright (c) 2017 Facebook Inc. (Soumith Chintala);
+9. torch 2.0.1+cu118 
+10. torchaudio  https://pypi.org/project/torchaudio
+11. torchaudio 2.3.0+cu118 
+12. torchaudio 2.0.2+cu118 
+13. decorator 5.2.1 https://pypi.org/project/decorator
+Copyright (c) 2005-2018; Michele Simionato
+14. torchaudio 0.10.0 https://pypi.org/project/torchaudio
+Copyright (c) 2017 Facebook Inc. (Soumith Chintala);
+15. packaging 24.2 https://pypi.org/project/packaging
+16. torchaudio 2.3.1 https://pypi.org/project/torchaudio
+Copyright (c) 2017 Facebook Inc. (Soumith Chintala); .
+Copyright (c) 2017 Facebook Inc. (Soumith Chintala); 
+Terms of the BSD-2-Clause: 
+--------------------------------------------------------------------
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+Open Source Software Licensed under the BSD-3-Clause License:
+--------------------------------------------------------------------
+1. protobuf 4.25.0 https://pypi.org/project/protobuf
+Copyright (c) 2009-2021; Google LLC
+Copyright 2008 Google Inc.  All rights reserved.
+2. pandas 2.2.3 https://pypi.org/project/pandas
+Copyright (c) 2008-2011; AQR Capital Management; LLC; Lambda Foundry; Inc. and PyData Development Team
+Copyright (c) 2008-2011; AQR Capital Management; LLC; Lambda Foundry; Inc. and PyData Development Team.
+3. numba 0.61.0 https://pypi.org/project/numba
+Copyright (c) 2012; Anaconda; Inc.
+Copyright (c) 2012; Anaconda; Inc..
+4. scipy  https://pypi.org/project/scipy
+5. soundfile 0.12.1 https://pypi.org/project/soundfile
+Copyright (c) 2013; Bastian Bechtold
+6. Jinja2 3.1.6 https://pypi.org/project/jinja2
+Copyright (c) 2009 by the Jinja Team; see AUTHORS for more details.
+Copyright (c) 2010 by Armin Ronacher.
+Copyright (c) 2006-2008 by the respective authors (see AUTHORS file).
+7. pandas 1.2.4 https://pypi.org/project/pandas
+Copyright (c) 2011-2020; Open source contributors.
+Copyright (c) 2008-2011; AQR Capital Management; LLC; Lambda Foundry; Inc. and PyData Development Team
+8. scikit-learn 1.6.1 https://pypi.org/project/scikit-learn
+Copyright (c) 2007-2021 The scikit-learn developers.
+Copyright (c) 2007-2022 The scikit-learn developers.
+Copyright (c) 2007-2021 The scikit-learn developers..
+9. kiwisolver 1.4.8 https://pypi.org/project/kiwisolver
+Copyright (c) 2013; Nucleic Development Team
+Copyright (c) 2013; Nucleic Development Team.
+10. MeCab 0.996.11 
+11. numpy 1.20.0 https://pypi.org/project/numpy
+Copyright (c) 2011-2014; The OpenBLAS Project
+Copyright (C) 2009 Free Software Foundation; Inc. <http:  fsf.org >
+Copyright (c) 2005-2020; NumPy Developers.
+Copyright (c) 1992-2013 The University of Tennessee and The University
+Copyright (c) 2000-2013 The University of California Berkeley. All
+Copyright (C) 2002-2017 Free Software Foundation; Inc.
+Copyright (c) 2006-2013 The University of Colorado Denver.  All rights
+12. numpy  https://pypi.org/project/numpy
+13. python-dateutil 2.9.0.post0 https://pypi.org/project/python-dateutil
+Copyright 2017- Paul Ganssle <paul@ganssle.io>
+14. networkx 3.1 https://pypi.org/project/networkx
+Copyright (C) 2004-2023 NetworkX Developers
+Copyright (C) 2004-2023; NetworkX Developers
+15. pynvml 12.0.0 https://pypi.org/project/pynvml
+Copyright (c) 2011-2021; NVIDIA Corporation.
+16. starlette 0.41.3 https://pypi.org/project/starlette
+copyright holder nor the names of its
+17. omegaconf 2.3.0 https://pypi.org/project/omegaconf
+Copyright (c) 2018; Omry Yadan
+18. torch 1.10.0 https://pypi.org/project/torch
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2014; The Regents of the University of California (Regents)
+Copyright (c) 2016-     Facebook; Inc            (Adam Paszke)
+Copyright (c) 2015 Yangqing Jia
+Copyright(c) 2015; 2016 the respective contributors
+Copyright (c) 2015 Google Inc.
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert; Samy Bengio; Johnny Mariethoz)
+Copyright (c) 2014-     Facebook; Inc            (Soumith Chintala)
+Copyright (c) 2014; the respective contributors
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright(c) 2013; 2014; 2015; the respective contributors
+Copyright 2019-2020 Kakao Brain
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert; Leon Bottou; Iain Melvin; Jason Weston)
+Copyright (c) 2018; Steven Moshier
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2016-present; Facebook Inc. All rights reserved.
+Copyright (c) 2016 Facebook Inc.
+19. torcheval 0.0.7 https://pypi.org/project/torcheval
+Copyright (c) Meta Platforms; Inc. and affiliates. All rights reserved.
+20. pynndescent 0.5.13 https://pypi.org/project/pynndescent
+Copyright (c) 2018; Leland McInnes
+21. gast 0.6.0 https://pypi.org/project/gast
+Copyright (c) 2016; Serge Guelton
+22. psutil 7.0.0 https://pypi.org/project/psutil
+Copyright (c) 2009; Jay Loden; Dave Daeschler; Giampaolo Rodola
+23. llvmlite 0.44.0 https://pypi.org/project/llvmlite
+Copyright (c) 2014-; Continuum Analytics; Inc.
+Copyright (c) 2014-; Continuum Analytics; Inc..
+24. torchvision 0.11.1 https://pypi.org/project/torchvision
+Copyright (c) Soumith Chintala 2016;
+25. scipy 1.15.2 
+26. pandas 2.0.3 https://pypi.org/project/pandas
+Copyright (c) 2008-2011; AQR Capital Management; LLC; Lambda Foundry; Inc. and PyData Development Team
+Copyright (c) 2011-2023; Open source contributors.
+27. jsonpointer 2.1 https://pypi.org/project/jsonpointer
+Copyright (c) 2011 Stefan K  gl <stefan@skoegl.net>
+28. GitPython 3.1.44 https://pypi.org/project/gitpython
+Copyright (C) 2008; 2009 Michael Trier and contributors
+29. scipy 1.16.0 
+30. numpy 1.26.4 https://pypi.org/project/numpy
+Copyright 2014 Melissa O Neill <oneill@pcg-random.org>
+Copyright (C) 2010 - 2019 ridiculous_fish; <libdivide@ridiculousfish.com>
+Copyright (c) 2005-2021; NumPy Developers..
+Copyright (c) 1992-2013 The University of Tennessee and The University
+Copyright 2010-2012; D. E. Shaw Research.
+Copyright (c) 2005-2021; NumPy Developers.
+Copyright (c) 2006; University of Georgia and Pierre G.F. Gerard-Marchant
+Copyright (c) 2019 Kevin Sheppard. All rights reserved.  
+Copyright (c) 2005-2022; NumPy Developers.
+Copyright (c) 2018 Melissa E. O Neill
+Copyright (c) 2005-2022; NumPy Developers..
+Copyright (c) 2011-2014; The OpenBLAS Project.
+Copyright (c) 2008 Ian Bicking and Contributors
+Copyright (c) 2003-2005; Jean-Sebastien Roy (js@jeannot.org)
+Copyright (C) 2010 - 2019 ridiculous_fish; <libdivide@ridiculousfish.com>.
+Copyright (c) 2005-2017; NumPy Developers.
+31. scipy 1.15.1 https://pypi.org/project/scipy
+Copyright (C) 2010-2019 Max-Planck-Society
+COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+Copyright (c) 2020 Michael Feldmeier
+Copyright (c) 1992-2015 The University of Tennessee and The University
+Copyright (C) 2003-2005 Peter J. Verveer
+copyright by Renee Touzin)
+Copyright (c) 2018; Quansight-Labs
+Copyright (c) 2021 ERGO-Code
+Copyright J.S. Roy (js@jeannot.org); 2002-2005
+Copyright (c) 1999; 2000; 2001 North Carolina State University
+Copyright (c) 2020 ERGO-Code
+(C) 2008 Stefan van der Walt <stefan@mentat.za.net>; Pauli Virtanen <pav@iki.fi>
+Copyright (c) 2021 Orson Peters <orsonpeters@gmail.com>
+Copyright (c) 2001-2002 Enthought; Inc. 2003-2022; SciPy Developers.
+copyright statement applies to all files; excluding
+Copyright (c) 2005; Rasmus Munk Larsen; Stanford University
+Copyright (c) 1996-2008 Rice University.
+Copyright (c) 2003; The Regents of the University of California; through
+copyrighted 2004 by David M. Cooke
+Copyright (c) 2001; 2002 Enthought; Inc.
+Copyright (c) 2002-2005; Jean-Sebastien Roy (js@jeannot.org)
+Copyright (c) 2001-2002 Enthought; Inc.  2003-2019; SciPy Developers.
+32. psutil 5.9.8 https://pypi.org/project/psutil
+Copyright (c) 2009; Jay Loden; Dave Daeschler; Giampaolo Rodola
+33. baichuan 0.0.1 https://pypi.org/project/baichuan
+34. numpy 1.24.4 https://pypi.org/project/numpy
+Copyright (c) 2005-2022; NumPy Developers.
+Copyright (c) 2011-2014; The OpenBLAS Project
+Copyright (C) 2009 Free Software Foundation; Inc. <http:  fsf.org >
+Copyright (c) 1992-2013 The University of Tennessee and The University
+Copyright (c) 2000-2013 The University of California Berkeley. All
+Copyright (C) 2002-2017 Free Software Foundation; Inc.
+Copyright (c) 2006-2013 The University of Colorado Denver.  All rights
+35. sympy 1.13.1 https://pypi.org/project/sympy
+Copyright (c) 2006-2023 SymPy Development Team
+Copyright (c) 2006-2022 SymPy Development Team
+Copyright (c) 2006-2021 SymPy Development Team
+Copyright 2016; latex2sympy
+Copyright (c) 2006-2014 SymPy developers
+36. MarkupSafe 2.1.5 https://pypi.org/project/markupsafe
+Copyright (c) 2010 by Armin Ronacher and contributors.  See AUTHORS
+37. portalocker 3.1.1 https://pypi.org/project/portalocker
+Copyright 2022 Rick van Hattem
+(c) 2001; 2002; 2003; 2004; 2005; 2006; 2007; 2008; 2009; 2010
+38. numpy 1.22.4 https://pypi.org/project/numpy
+Copyright (c) 2005-2022; NumPy Developers.
+Copyright (c) 2011-2014; The OpenBLAS Project
+Copyright (C) 2009 Free Software Foundation; Inc. <http:  fsf.org >
+Copyright (c) 1992-2013 The University of Tennessee and The University
+Copyright (c) 2000-2013 The University of California Berkeley. All
+Copyright (C) 2002-2017 Free Software Foundation; Inc.
+Copyright (c) 2006-2013 The University of Colorado Denver.  All rights
+39. torch  https://pypi.org/project/torch
+40. idna 3.10 https://pypi.org/project/idna
+Copyright (c) 2013-2021; Kim Davies
+41. soundfile 0.13.1 https://pypi.org/project/soundfile
+Copyright (C) 1991; 1999 Free Software Foundation; Inc.
+Copyright (c) 2013; Bastian Bechtold
+42. multiprocess 0.70.16 https://pypi.org/project/multiprocess
+Copyright (c) 2004-2016 California Institute of Technology.
+Copyright (c) 2006-2008; R Oudkerk.
+Copyright (c) 2008-2016 California Institute of Technology.
+Copyright (c) 2006-2008; R Oudkerk
+Copyright (c) 2008-2016 California Institute of Technology..
+Copyright (c) 2004-2016 California Institute of Technology..
+43. click 8.1.8 https://pypi.org/project/click
+Copyright (c) 2014 by Armin Ronacher.
+44. PySocks 1.7.1 https://pypi.org/project/pysocks
+Copyright 2006 Dan-Haim. All rights reserved.
+Copyright (C) 2006 Dan-Haim. All rights reserved.
+45. bert 2.2.0 https://pypi.org/project/bert
+Copyright (c) 2009 Lefora <samuel@lefora.com>
+46. semantic-version 2.10.0 https://pypi.org/project/semantic-version
+Copyright (c) The python-semanticversion project
+47. uvicorn 0.34.0 https://pypi.org/project/uvicorn
+copyright holder nor the names of its
+48. cryptography 44.0.2 
+49. pooch 1.8.2 https://pypi.org/project/pooch
+Copyright (c) 2018 The Pooch Developers
+50. smmap 5.0.2 https://pypi.org/project/smmap
+Copyright (C) 2010; 2011 Sebastian Thiel and contributors
+51. accelerate 1.9.0 
+52. click 8.2.1 
+53. umap-learn 0.5.7 https://pypi.org/project/umap-learn
+Copyright (c) 2017; Leland McInnes
+54. starlette 0.46.1 https://pypi.org/project/starlette
+copyright holder nor the names of its
+55. fsspec 2024.12.0 https://pypi.org/project/fsspec
+Copyright (c) 2018; Martin Durant
+56. cycler 0.12.1 https://pypi.org/project/cycler
+Copyright (c) 2015; matplotlib project
+57. soundfile 0.9.0 https://pypi.org/project/soundfile
+Copyright (c) 2013; Bastian Bechtold
+58. antlr4-python3-runtime 4.9.3 https://pypi.org/project/antlr4-python3-runtime
+59. Werkzeug 3.1.3 https://pypi.org/project/werkzeug
+Copyright (c) 2010 by the Werkzeug Team; see AUTHORS for more details.
+Copyright (c) 2014 by the Werkzeug Team; see AUTHORS for more details.
+Copyright (c) 2011 by the Werkzeug Team; see AUTHORS for more details.
+Copyright (c) 2011 by Armin Ronacher.
+60. contourpy 1.3.1 https://pypi.org/project/contourpy
+Copyright (c) 2021-2022; ContourPy Developers.
+Copyright (c) 2021-2022; ContourPy Developers..
+Copyright (c) 2021; ContourPy Developers..
+Copyright (c) 2021-2023; ContourPy Developers.
+Copyright (c) 2021; ContourPy Developers.
+61. mpmath 1.3.0 https://pypi.org/project/mpmath
+Copyright (c) 2005-2021 Fredrik Johansson and mpmath contributors
+62. accelerate 1.6.0 
+63. oauthlib 3.2.2 https://pypi.org/project/oauthlib
+Copyright (c) 2019 The OAuthlib Community
+64. fsspec 2024.2.0 https://pypi.org/project/fsspec
+Copyright (c) 2018; Martin Durant
+65. xxhash 3.5.0 https://pypi.org/project/xxhash
+Copyright (c) 2012-2020 Yann Collet
+Copyright (c) 2014-2020; Yue Du
+66. networkx 3.4.2 https://pypi.org/project/networkx
+Copyright (C) 2004-2021; NetworkX Developers
+Copyright (C) 2004-2022; NetworkX Developers
+Copyright (C) 2004-2023; NetworkX Developers
+67. nvidia-ml-py 12.570.86 https://pypi.org/project/nvidia-ml-py
+68. lxml 5.3.1 https://pypi.org/project/lxml
+Copyright (c) 2004 Infrae. All rights reserved.
+69. websockets 14.2 https://pypi.org/project/websockets
+Copyright (c) 2013-2021 Aymeric Augustin and contributors..
+Copyright (c) 2013-2021 Aymeric Augustin and contributors.
+Copyright (c) Aymeric Augustin and contributors
+70. dill 0.3.8 https://pypi.org/project/dill
+Copyright (c) 2004-2016 California Institute of Technology.
+71. uvicorn 0.30.0 https://pypi.org/project/uvicorn
+copyright holder nor the names of its
+72. joblib 1.4.2 https://pypi.org/project/joblib
+Copyright (c) 2008-2016; The joblib developers.
+Copyright (c) 2008-2021; The joblib developers.
+73. colorama 0.4.6 https://pypi.org/project/colorama
+Copyright (c) 2010 Jonathan Hartley
+Terms of the BSD-3-Clause: 
+--------------------------------------------------------------------
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+Open Source Software Licensed under the Python-2.0 License:
+--------------------------------------------------------------------
+1. attrs 25.3.0 
+2. argparse 1.1 
+Terms of the Python-2.0: 
+--------------------------------------------------------------------
+PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2
+
+     1. This LICENSE AGREEMENT is between the Python Software Foundation ("PSF"), and the Individual or Organization ("Licensee") accessing and otherwise using this software ("Python") in source or binary form and its associated documentation.
+
+     2. Subject to the terms and conditions of this License Agreement, PSF hereby grants Licensee a nonexclusive, royalty-free, world-wide license to reproduce, analyze, test, perform and/or display publicly, prepare derivative works, distribute, and otherwise use Python alone or in any derivative version, provided, however, that PSF's License Agreement and PSF's notice of copyright, i.e., "Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006 Python Software Foundation; All Rights Reserved" are retained in Python alone or in any derivative version prepared by Licensee.
+
+     3. In the event Licensee prepares a derivative work that is based on or incorporates Python or any part thereof, and wants to make the derivative work available to others as provided herein, then Licensee hereby agrees to include in any such work a brief summary of the changes made to Python.
+
+     4. PSF is making Python available to Licensee on an "AS IS" basis. PSF MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED. BY WAY OF EXAMPLE, BUT NOT LIMITATION, PSF MAKES NO AND DISCLAIMS ANY REPRESENTATION OR WARRANTY OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF PYTHON WILL NOT INFRINGE ANY THIRD PARTY RIGHTS.
+
+     5. PSF SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF PYTHON FOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS A RESULT OF MODIFYING, DISTRIBUTING, OR OTHERWISE USING PYTHON, OR ANY DERIVATIVE THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF.
+
+     6. This License Agreement will automatically terminate upon a material breach of its terms and conditions.
+
+     7. Nothing in this License Agreement shall be deemed to create any relationship of agency, partnership, or joint venture between PSF and Licensee. This License Agreement does not grant permission to use PSF trademarks or trade name in a trademark sense to endorse or promote products or services of Licensee, or any third party.
+
+     8. By copying, installing or otherwise using Python, Licensee agrees to be bound by the terms and conditions of this License Agreement.
+
+
+BEOPEN.COM LICENSE AGREEMENT FOR PYTHON 2.0
+
+BEOPEN PYTHON OPEN SOURCE LICENSE AGREEMENT VERSION 1
+
+     1. This LICENSE AGREEMENT is between BeOpen.com ("BeOpen"), having an office at 160 Saratoga Avenue, Santa Clara, CA 95051, and the Individual or Organization ("Licensee") accessing and otherwise using this software in source or binary form and its associated documentation ("the Software").
+
+     2. Subject to the terms and conditions of this BeOpen Python License Agreement, BeOpen hereby grants Licensee a non-exclusive, royalty-free, world-wide license to reproduce, analyze, test, perform and/or display publicly, prepare derivative works, distribute, and otherwise use the Software alone or in any derivative version, provided, however, that the BeOpen Python License is retained in the Software, alone or in any derivative version prepared by Licensee.
+
+     3. BeOpen is making the Software available to Licensee on an "AS IS" basis. BEOPEN MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED. BY WAY OF EXAMPLE, BUT NOT LIMITATION, BEOPEN MAKES NO AND DISCLAIMS ANY REPRESENTATION OR WARRANTY OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE SOFTWARE WILL NOT INFRINGE ANY THIRD PARTY RIGHTS.
+
+     4. BEOPEN SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF THE SOFTWARE FOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS A RESULT OF USING, MODIFYING OR DISTRIBUTING THE SOFTWARE, OR ANY DERIVATIVE THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF.
+
+     5. This License Agreement will automatically terminate upon a material breach of its terms and conditions.
+
+     6. This License Agreement shall be governed by and interpreted in all respects by the law of the State of California, excluding conflict of law provisions. Nothing in this License Agreement shall be deemed to create any relationship of agency, partnership, or joint venture between BeOpen and Licensee. This License Agreement does not grant permission to use BeOpen trademarks or trade names in a trademark sense to endorse or promote products or services of Licensee, or any third party. As an exception, the "BeOpen Python" logos available at http://www.pythonlabs.com/logos.html may be used according to the permissions granted on that web page.
+
+     7. By copying, installing or otherwise using the software, Licensee agrees to be bound by the terms and conditions of this License Agreement.
+
+
+CNRI OPEN SOURCE LICENSE AGREEMENT (for Python 1.6b1)
+
+IMPORTANT: PLEASE READ THE FOLLOWING AGREEMENT CAREFULLY.
+
+BY CLICKING ON "ACCEPT" WHERE INDICATED BELOW, OR BY COPYING, INSTALLING OR OTHERWISE USING PYTHON 1.6, beta 1 SOFTWARE, YOU ARE DEEMED TO HAVE AGREED TO THE TERMS AND CONDITIONS OF THIS LICENSE AGREEMENT.
+
+     1. This LICENSE AGREEMENT is between the Corporation for National Research Initiatives, having an office at 1895 Preston White Drive, Reston, VA 20191 ("CNRI"), and the Individual or Organization ("Licensee") accessing and otherwise using Python 1.6, beta 1 software in source or binary form and its associated documentation, as released at the www.python.org Internet site on August 4, 2000 ("Python 1.6b1").
+
+     2. Subject to the terms and conditions of this License Agreement, CNRI hereby grants Licensee a non-exclusive, royalty-free, world-wide license to reproduce, analyze, test, perform and/or display publicly, prepare derivative works, distribute, and otherwise use Python 1.6b1 alone or in any derivative version, provided, however, that CNRIs License Agreement is retained in Python 1.6b1, alone or in any derivative version prepared by Licensee.
+
+     Alternately, in lieu of CNRIs License Agreement, Licensee may substitute the following text (omitting the quotes): "Python 1.6, beta 1, is made available subject to the terms and conditions in CNRIs License Agreement. This Agreement may be located on the Internet using the following unique, persistent identifier (known as a handle): 1895.22/1011. This Agreement may also be obtained from a proxy server on the Internet using the URL:http://hdl.handle.net/1895.22/1011".
+
+     3. In the event Licensee prepares a derivative work that is based on or incorporates Python 1.6b1 or any part thereof, and wants to make the derivative work available to the public as provided herein, then Licensee hereby agrees to indicate in any such work the nature of the modifications made to Python 1.6b1.
+
+     4. CNRI is making Python 1.6b1 available to Licensee on an "AS IS" basis. CNRI MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED. BY WAY OF EXAMPLE, BUT NOT LIMITATION, CNRI MAKES NO AND DISCLAIMS ANY REPRESENTATION OR WARRANTY OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF PYTHON 1.6b1 WILL NOT INFRINGE ANY THIRD PARTY RIGHTS.
+
+     5. CNRI SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF THE SOFTWARE FOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS A RESULT OF USING, MODIFYING OR DISTRIBUTING PYTHON 1.6b1, OR ANY DERIVATIVE THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF.
+
+     6. This License Agreement will automatically terminate upon a material breach of its terms and conditions.
+
+     7. This License Agreement shall be governed by and interpreted in all respects by the law of the State of Virginia, excluding conflict of law provisions. Nothing in this License Agreement shall be deemed to create any relationship of agency, partnership, or joint venture between CNRI and Licensee. This License Agreement does not grant permission to use CNRI trademarks or trade name in a trademark sense to endorse or promote products or services of Licensee, or any third party.
+
+     8. By clicking on the "ACCEPT" button where indicated, or by copying, installing or otherwise using Python 1.6b1, Licensee agrees to be bound by the terms and conditions of this License Agreement.
+
+ACCEPT
+
+
+CWI LICENSE AGREEMENT FOR PYTHON 0.9.0 THROUGH 1.2
+
+Copyright (c) 1991 - 1995, Stichting Mathematisch Centrum Amsterdam, The Netherlands. All rights reserved.
+
+     Permission to use, copy, modify, and distribute this software and its documentation for any purpose and without fee is hereby granted, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation, and that the name of Stichting Mathematisch Centrum or CWI not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission.
+
+     STICHTING MATHEMATISCH CENTRUM DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO EVENT SHALL STICHTING MATHEMATISCH CENTRUM BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+
+
+Open Source Software Licensed under the bzip2-1.0.6 License:
+--------------------------------------------------------------------
+1. pillow 11.1.0 https://pypi.org/project/pillow
+Copyright 00 1997-2011 by Secret Labs AB
+Copyright 80 2015 Information Technology Authority (ITA) <foss@ita.gov.om>
+Copyright .. 1997-2011 by Secret Labs AB
+Copyright .. 2015 Information Technology Authority (ITA) <foss@ita.gov.om>
+Copyright (c) 2018 Roel Nieskens; https:  pixelambacht.nl Copyright (c) 2018 Google LLC
+Terms of the bzip2-1.0.6: 
+--------------------------------------------------------------------
+This program, "bzip2", the associated library "libbzip2", and all documentation, are copyright (C) 1996-2010 Julian R Seward. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+     1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+     2. The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, an acknowledgment in the product documentation would be appreciated but is not required.
+
+     3. Altered source versions must be plainly marked as such, and must not be misrepresented as being the original software.
+
+     4. The name of the author may not be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Julian Seward, jseward@bzip.org bzip2/libbzip2 version 1.0.6 of 6 September 2010
+
+
+
+Open Source Software Licensed under the Public Domain License:
+--------------------------------------------------------------------
+1. blobfile 3.0.0 https://pypi.org/project/blobfile
+Terms of the Public Domain: 
+--------------------------------------------------------------------
+Being in the public domain is not a license; rather, it means the
+material is not copyrighted and no license is needed. Practically
+speaking, though, if a work is in the public domain, it might as well
+have an all-permissive non-copyleft free software license. Public
+domain material is compatible with the GNU GPL.
+
+
+
+Open Source Software Licensed under the PSF-2.0 License:
+--------------------------------------------------------------------
+1. aiohappyeyeballs 2.4.6 https://pypi.org/project/aiohappyeyeballs
+2. regex  https://pypi.org/project/regex
+3. matplotlib 3.7.5 https://pypi.org/project/matplotlib
+copyright; i.e.; Copyright (c)
+Copyright (C) 2002-2005 Maxim Shemanarev (McSeem) 
+copyright; i.e.;  Copyright (c)
+copyright; i.e.; Copyright (c).
+4. matplotlib 3.10.1 https://pypi.org/project/matplotlib
+copyright; i.e.; Copyright (c)
+Copyright (C) 2002-2005 Maxim Shemanarev (McSeem) 
+copyright; i.e.;  Copyright (c)
+copyright; i.e.; Copyright (c).
+Terms of the PSF-2.0: 
+--------------------------------------------------------------------
+PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2
+
+1. This LICENSE AGREEMENT is between the Python Software Foundation("PSF"), and the Individual or Organization ("Licensee") accessing and otherwise using this software ("Python") in source or binary form and its associated documentation.
+
+2. Subject to the terms and conditions of this License Agreement, PSF herebygrants Licensee a nonexclusive, royalty-free, world-wide license to reproduce,analyze, test, perform and/or display publicly, prepare derivative works,distribute, and otherwise use Python alone or in any derivative version,provided, however, that PSF's License Agreement and PSF's notice of copyright,i.e., "Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006 Python Software Foundation All Rights Reserved" are retained in Python alone or in any derivative version prepared by Licensee.
+
+3. In the event Licensee prepares a derivative work that is based onor incorporates Python or any part thereof, and wants to make the derivative work available to others as provided herein, then Licensee hereby agrees to include in any such work a brief summary of the changes made to Python.
+
+4. PSF is making Python available to Licensee on an "AS IS" basis. PSF MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED.  BY WAY OF EXAMPLE, BUT NOT LIMITATION, PSF MAKES NO AND DISCLAIMS ANY REPRESENTATION OR WARRANTY OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF PYTHON WILL NOT INFRINGE ANY THIRD PARTY RIGHTS.
+
+5. PSF SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF PYTHON FOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS A RESULT OF MODIFYING, DISTRIBUTING, OR OTHERWISE USING PYTHON, OR ANY DERIVATIVE THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF.
+
+6. This License Agreement will automatically terminate upon a material breach of its terms and conditions.
+
+7. Nothing in this License Agreement shall be deemed to create any relationship of agency, partnership, or joint venture between PSF and Licensee.  This License Agreement does not grant permission to use PSF trademarks or trade name in a trademark sense to endorse or promote products or services of Licensee, or any third party.
+
+8. By copying, installing or otherwise using Python,Licensee agrees to be bound by the terms and conditions of this License Agreement.
+
+
+
+Open Source Software Licensed under the GNU All Permissive license License:
+--------------------------------------------------------------------
+1. fastapi 0.115.12 
+Terms of the GNU All Permissive license: 
+--------------------------------------------------------------------
+Copying and distribution of this file, with or without modification,
+ are permitted in any medium without royalty provided the copyright
+ notice and this notice are preserved. This file is offered as-is,
+ without any warranty.
+
+
+
+Open Source Software Licensed under the MIT-CMU License:
+--------------------------------------------------------------------
+1. pillow 11.1.0 https://pypi.org/project/pillow
+Copyright 00 1997-2011 by Secret Labs AB
+Copyright 80 2015 Information Technology Authority (ITA) <foss@ita.gov.om>
+Copyright .. 1997-2011 by Secret Labs AB
+Copyright .. 2015 Information Technology Authority (ITA) <foss@ita.gov.om>
+Copyright (c) 2018 Roel Nieskens; https:  pixelambacht.nl Copyright (c) 2018 Google LLC
+Terms of the MIT-CMU: 
+--------------------------------------------------------------------
+By obtaining, using, and/or copying this software and/or its associated documentation, you agree that you have read, understood, and will comply with the following terms and conditions:
+
+Permission to use, copy, modify, and distribute this software and its associated documentation for any purpose and without fee is hereby granted, provided that the above copyright notice appears in all copies, and that both that copyright notice and this permission notice appear in supporting documentation, and that the name of the copyright holder not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission.
+
+THE COPYRIGHT HOLDER DISCLAIM ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM THE LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+
+
+Open Source Software Licensed under the 0BSD License:
+--------------------------------------------------------------------
+1. PySocks 1.7.1 https://pypi.org/project/pysocks
+Copyright 2006 Dan-Haim. All rights reserved.
+Copyright (C) 2006 Dan-Haim. All rights reserved.
+2. uvicorn 0.30.0 https://pypi.org/project/uvicorn
+copyright holder nor the names of its
+Terms of the 0BSD: 
+--------------------------------------------------------------------
+BSD Zero Clause License
+
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+
+
+Open Source Software Licensed under the Apache-2.0 License:
+--------------------------------------------------------------------
+1. fire  https://pypi.org/project/fire
+2. llama 0.1.1 https://pypi.org/project/llama
+Copyright (c) 2016 Dropbox; Inc.
+3. pyarrow 19.0.1 https://pypi.org/project/pyarrow
+Copyright (C) 2017-2018 Dremio Corporation Licensed under the Apache
+Copyright (c) 2011-2012; Lambda Foundry; Inc. and PyData Development Team
+COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+(C) Packages on Homebrew
+Copyright 2014 Google Inc.
+Copyright 2014-2019 Melissa O Neill <oneill@pcg-random.org>;
+(C) Packages for Debian GNU Linux; Ubuntu and CentOS (Unofficial)
+Copyright    2005-2020 Rich Felker; et al.
+(c) a bug that causes a crash (even when the API contract is upheld). We use this to highlight fixes to issues that may affect 
+(C) Packages for Debian GNU Linux; Ubuntu and CentOS
+(C) and Ruby
+4. flatbuffers 25.2.10 
+5. Requests 2.32.4 
+6. absl-py 2.2.1 
+7. sacrebleu 2.5.1 https://pypi.org/project/sacrebleu
+8. layers 0.1.5 https://pypi.org/project/layers
+Copyright (c) 2076 year  > another AUTHOR.txt
+9. async-timeout 5.0.1 https://pypi.org/project/async-timeout
+Copyright 2016-2020 aio-libs collaboration.
+10. onnx 1.16.0 https://pypi.org/project/onnx
+Copyright (c) 2016 Wenzel Jakob <wenzel.jakob@epfl.ch>; All rights reserved.
+Copyright (c) 2016 Wenzel Jakob <wenzel.jakob@epfl.ch>; All rights reserved..
+11. transformers 4.40.1 https://pypi.org/project/transformers
+Copyright 2018- The Hugging Face team. All rights reserved.
+12. multidict 6.1.0 https://pypi.org/project/multidict
+Copyright 2016-2021 Andrew Svetlov and aio-libs team
+Copyright 2016-2021 Andrew Svetlov and aio-libs team.
+13. jamo 0.4.1 https://pypi.org/project/jamo
+14. torch-complex 0.4.4 https://pypi.org/project/torch-complex
+15. tensorboard 2.14.0 https://pypi.org/project/tensorboard
+Copyright 2017 The TensorFlow Authors.  All rights reserved.
+16. tokenizers 0.21.1 
+17. tzdata 2025.1 https://pypi.org/project/tzdata
+Copyright (c) 2020; Paul Ganssle (Google)
+18. modelscope 1.15.0 https://pypi.org/project/modelscope
+19. python-dateutil 2.9.0.post0 https://pypi.org/project/python-dateutil
+Copyright 2017- Paul Ganssle <paul@ganssle.io>
+20. google-auth 2.38.0 https://pypi.org/project/google-auth
+21. docker-pycreds 0.4.0 https://pypi.org/project/docker-pycreds
+22. nltk 3.9.1 https://pypi.org/project/nltk
+Copyright (C) 2001-2019 NLTK Project
+Copyright (C) 2001-2011 NLTK Project
+Copyright (C) 2001-2014 NLTK Project
+Copyright (C) 2001-2020 NLTK Project
+Copyright (C) 2001-2015 NLTK Project
+Copyright (C) 2001-2021 NLTK Project
+Copyright (C) 2001-2012 NLTK Project
+Copyright (C) 2001-2017 NLTK Project
+Copyright (C) 2001-2013 NLTK Project
+Copyright (C) 2001-2022 NLTK Project
+Copyright (C) 2001-2018 NLTK Project
+23. Cython 3.0.12 
+24. diffusers 0.29.0 https://pypi.org/project/diffusers
+25. aiosignal 1.3.2 https://pypi.org/project/aiosignal
+26. yarl 1.18.3 https://pypi.org/project/yarl
+Copyright 2016-2021; Andrew Svetlov and aio-libs team.
+Copyright 2016-2021; Andrew Svetlov and aio-libs team
+27. msgpack 1.1.0 https://pypi.org/project/msgpack
+Copyright (C) 2008-2011 INADA Naoki <songofacandy@gmail.com>
+Copyright (C) 2008-2011 INADA Naoki <songofacandy@gmail.com>.
+28. google-resumable-media 2.7.2 https://pypi.org/project/google-resumable-media
+29. jiwer 3.1.0 https://pypi.org/project/jiwer
+30. falcon 4.0.2 https://pypi.org/project/falcon
+31. sacrebleu 1.4.12 https://pypi.org/project/sacrebleu
+32. deepspeed 0.14.2 https://pypi.org/project/deepspeed
+Copyright (c) Microsoft Corporation..
+Copyright (c) Microsoft Corporation.
+33. aiohappyeyeballs 2.6.1 
+34. aliyun-python-sdk-kms 2.16.5 https://pypi.org/project/aliyun-python-sdk-kms
+Copyright 1999-present Alibaba Group Holding Ltd.
+35. aliyun-python-sdk-core 2.16.0 https://pypi.org/project/aliyun-python-sdk-core
+Copyright 1999-present Alibaba Group Holding Ltd.
+36. huggingface_hub 0.19.4 
+37. datasets 2.18.0 https://pypi.org/project/datasets
+Copyright Act. It was written as part of the authors 
+Copyright (c) Microsoft Corporation
+Copyright (c) 2018 OMIlab; The Open University of Israel
+Copyright (C) by Ixa Taldea; University of the Basque Country UPV EHU.
+copyrights of the data belong to these websites. _(for English)_
+copyright reasons we only make available the annotations. In order to build the complete data sets you will need access to the 
+copyright status
+Copyright (c) 2017 Kamran Kowsari
+copyrighted work claimed to be infringed.
+copyrights; please contact the repository maintainer.
+copyright     CLARIN . SI  User Licence for Internet Corpora ;
+Copyright 2006 by Princeton University. All rights reserved.
+Copyright belongs to the original copyright holders. See https:  github.com recitalAI MLSUM#mlsum
+copyrighted by  ;
+copyright of the data belongs to original book article authors or translators (hence; used for research purpose; and please con
+Copyright 3
+copyright of each message content belongs to the original poster.
+copyrights of the data belong to haodf.com.
+Copyright (c) 2020 lemon234071
+copyright of the questions and documents included in TriviaQA.
+Copyright (c) 2018 THUNLP
+Copyright (C) 2019 Multimodal Digital Media Analysis Lab - Indraprastha Institute of Information Technology; New Delhi (MIDAS; 
+copyright to your contribution;
+copyrighted images that he or she may create from the Database.
+copyright-holder>Al-Mawrid< copyright-holder>
+copyright; taken from older datasets like the freely available SEETimes and more recent datasources like the Romanian Wikipedia
+(c) We removed all instances whose captions contained any of the 400 potentially offensive
+copyrighted material  . If in doubt;
+Copyright 2017 Google; Inc.
+copyright 50 2003 - 2013 commonwealth of kentucky . ;
+Copyright-2018-by-[American-University-of-Beirut]
+Copyright 2017 Google Inc.
+Copyright of the entire licensed dataset is held by the Licensor.
+copyright; fair use; or other aspects of intellectual property rights. See the NLM Copyright page.
+Copyright 2020 The HuggingFace Team. All rights reserved.
+38. pyarrow 17.0.0 https://pypi.org/project/pyarrow
+Copyright (C) 2017-2018 Dremio Corporation Licensed under the Apache
+Copyright (c) 2011-2012; Lambda Foundry; Inc. and PyData Development Team
+COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+(C) Packages on Homebrew
+Copyright 2014 Google Inc.
+Copyright 2014-2019 Melissa O Neill <oneill@pcg-random.org>;
+(C) Packages for Debian GNU Linux; Ubuntu and CentOS (Unofficial)
+Copyright    2005-2020 Rich Felker; et al.
+(c) a bug that causes a crash (even when the API contract is upheld). We use this to highlight fixes to issues that may affect 
+(C) Packages for Debian GNU Linux; Ubuntu and CentOS
+(C) and Ruby
+39. whisper 1.1.10 https://pypi.org/project/whisper
+40. botocore 1.37.32 
+41. cached_path 1.7.3 
+42. propcache 0.2.1 https://pypi.org/project/propcache
+43. python-multipart 0.0.12 https://pypi.org/project/python-multipart
+Copyright 2012; Andrew Dunham
+44. jiwer 4.0.0 
+45. WeTextProcessing 1.0.3 https://pypi.org/project/wetextprocessing
+46. absl-py 2.2.2 
+47. deepspeed 0.16.8 
+48. modelscope 1.25.0 
+49. lightning-utilities 0.14.3 
+50. tn 0.0.4 https://pypi.org/project/tn
+51. sentencepiece 0.2.0 https://pypi.org/project/sentencepiece
+Copyright (c) 2010 Daisuke Okanohara All Rights Reserved.
+Copyright 2008 Google Inc.  All rights reserved.
+Copyright (c) 2008-2011; Susumu Yata
+52. cryptography 44.0.2 
+53. huggingface-hub 0.29.3 
+54. huggingface-hub 0.27.1 https://pypi.org/project/huggingface-hub
+Copyright 2023 The HuggingFace Team. All rights reserved.
+Copyright 2020 The HuggingFace Team. All rights reserved.
+55. lightning 2.2.4 https://pypi.org/project/lightning
+56. gradio 5.14.0 
+57. sentencepiece  https://pypi.org/project/sentencepiece
+58. huggingface_hub 0.31.4 
+59. regex 2024.11.6 https://pypi.org/project/regex
+copyright (c) 1998-2001 by Secret Labs AB and licensed under CNRI s Python 1.6.
+(C) 2007 Free Software Foundation; Inc. <https:  fsf.org >
+copyright (c) 1998-2001 by Secret Labs AB and licensed under CNRI s Python 1.6
+60. google-api-core 2.24.2 https://pypi.org/project/google-api-core
+61. boto3 1.37.32 
+62. gradio 5.38.0 
+63. datasets 3.5.0 
+64. gradio_client 1.4.2 
+65. s3prl  https://pypi.org/project/s3prl
+66. google-cloud-storage 2.19.0 https://pypi.org/project/google-cloud-storage
+67. sniffio 1.3.1 https://pypi.org/project/sniffio
+68. diffusers 0.27.2 https://pypi.org/project/diffusers
+69. gradio 5.4.0 https://pypi.org/project/gradio
+70. diffusers 0.33.1 
+71. gradio_client 1.7.0 
+72. cached_path 1.7.1 
+73. deepspeed 0.16.5 
+74. modelscope  https://pypi.org/project/modelscope
+75. sortedcontainers 2.4.0 https://pypi.org/project/sortedcontainers
+Copyright 2014-2019 Grant Jenks
+76. google-auth-oauthlib 1.0.0 https://pypi.org/project/google-auth-oauthlib
+77. dataclasses  https://pypi.org/project/dataclasses
+78. aiofiles 23.2.1 https://pypi.org/project/aiofiles
+Copyright 2016 Tin Tvrtkovic
+79. tensorboard 2.19.0 
+80. python-multipart 0.0.20 https://pypi.org/project/python-multipart
+Copyright 2012; Andrew Dunham
+81. cython 3.1.1 
+82. nvidia-nccl-cu11 2.20.5 https://pypi.org/project/nvidia-nccl-cu11
+Copyright (c) 2015-2019; NVIDIA CORPORATION. All rights reserved.
+83. speechbrain 1.0.2 https://pypi.org/project/speechbrain
+84. cython  https://pypi.org/project/cython
+85. proto-plus 1.26.1 https://pypi.org/project/proto-plus
+86. HyperPyYAML 1.2.2 https://pypi.org/project/hyperpyyaml
+87. gemma 3.1.0 
+88. yapf 0.43.0 https://pypi.org/project/yapf
+89. tensorboard-data-server 0.7.2 
+90. pyarrow 19.0.0 https://pypi.org/project/pyarrow
+Copyright (C) 2017-2018 Dremio Corporation Licensed under the Apache
+Copyright (c) 2011-2012; Lambda Foundry; Inc. and PyData Development Team
+COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+(C) Packages on Homebrew
+Copyright 2014 Google Inc.
+Copyright 2014-2019 Melissa O Neill <oneill@pcg-random.org>;
+(C) Packages for Debian GNU Linux; Ubuntu and CentOS (Unofficial)
+Copyright    2005-2020 Rich Felker; et al.
+(c) a bug that causes a crash (even when the API contract is upheld). We use this to highlight fixes to issues that may affect 
+(C) Packages for Debian GNU Linux; Ubuntu and CentOS
+(C) and Ruby
+91. frozenlist 1.5.0 https://pypi.org/project/frozenlist
+92. packaging 24.2 https://pypi.org/project/packaging
+93. lightning 2.5.1 
+94. requests 2.32.3 https://pypi.org/project/requests
+Copyright 2019 Kenneth Reitz
+Terms of the Apache-2.0: 
+--------------------------------------------------------------------
+Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
+
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+1. Definitions.
+
+"License" shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.
+
+"Licensor" shall mean the copyright owner or entity authorized by the copyright owner that is granting the License.
+
+"Legal Entity" shall mean the union of the acting entity and all other entities that control, are controlled by, or are under common control with that entity. For the purposes of this definition, "control" means (i) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the outstanding shares, or (iii) beneficial ownership of such entity.
+
+"You" (or "Your") shall mean an individual or Legal Entity exercising permissions granted by this License.
+
+"Source" form shall mean the preferred form for making modifications, including but not limited to software source code, documentation source, and configuration files.
+
+"Object" form shall mean any form resulting from mechanical transformation or translation of a Source form, including but not limited to compiled object code, generated documentation, and conversions to other media types.
+
+"Work" shall mean the work of authorship, whether in Source or Object form, made available under the License, as indicated by a copyright notice that is included in or attached to the work (an example is provided in the Appendix below).
+
+"Derivative Works" shall mean any work, whether in Source or Object form, that is based on (or derived from) the Work and for which the editorial revisions, annotations, elaborations, or other modifications represent, as a whole, an original work of authorship. For the purposes of this License, Derivative Works shall not include works that remain separable from, or merely link (or bind by name) to the interfaces of, the Work and Derivative Works thereof.
+
+"Contribution" shall mean any work of authorship, including the original version of the Work and any modifications or additions to that Work or Derivative Works thereof, that is intentionally submitted to Licensor for inclusion in the Work by the copyright owner or by an individual or Legal Entity authorized to submit on behalf of the copyright owner. For the purposes of this definition, "submitted" means any form of electronic, verbal, or written communication sent to the Licensor or its representatives, including but not limited to communication on electronic mailing lists, source code control systems, and issue tracking systems that are managed by, or on behalf of, the Licensor for the purpose of discussing and improving the Work, but excluding communication that is conspicuously marked or otherwise designated in writing by the copyright owner as "Not a Contribution."
+
+"Contributor" shall mean Licensor and any individual or Legal Entity on behalf of whom a Contribution has been received by Licensor and subsequently incorporated within the Work.
+
+2. Grant of Copyright License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form.
+
+3. Grant of Patent License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable (except as stated in this section) patent license to make, have made, use, offer to sell, sell, import, and otherwise transfer the Work, where such license applies only to those patent claims licensable by such Contributor that are necessarily infringed by their Contribution(s) alone or by combination of their Contribution(s) with the Work to which such Contribution(s) was submitted. If You institute patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Work or a Contribution incorporated within the Work constitutes direct or contributory patent infringement, then any patent licenses granted to You under this License for that Work shall terminate as of the date such litigation is filed.
+
+4. Redistribution. You may reproduce and distribute copies of the Work or Derivative Works thereof in any medium, with or without modifications, and in Source or Object form, provided that You meet the following conditions:
+
+     (a) You must give any other recipients of the Work or Derivative Works a copy of this License; and
+
+     (b) You must cause any modified files to carry prominent notices stating that You changed the files; and
+
+     (c) You must retain, in the Source form of any Derivative Works that You distribute, all copyright, patent, trademark, and attribution notices from the Source form of the Work, excluding those notices that do not pertain to any part of the Derivative Works; and
+
+     (d) If the Work includes a "NOTICE" text file as part of its distribution, then any Derivative Works that You distribute must include a readable copy of the attribution notices contained within such NOTICE file, excluding those notices that do not pertain to any part of the Derivative Works, in at least one of the following places: within a NOTICE text file distributed as part of the Derivative Works; within the Source form or documentation, if provided along with the Derivative Works; or, within a display generated by the Derivative Works, if and wherever such third-party notices normally appear. The contents of the NOTICE file are for informational purposes only and do not modify the License. You may add Your own attribution notices within Derivative Works that You distribute, alongside or as an addendum to the NOTICE text from the Work, provided that such additional attribution notices cannot be construed as modifying the License.
+
+     You may add Your own copyright statement to Your modifications and may provide additional or different license terms and conditions for use, reproduction, or distribution of Your modifications, or for any such Derivative Works as a whole, provided Your use, reproduction, and distribution of the Work otherwise complies with the conditions stated in this License.
+
+5. Submission of Contributions. Unless You explicitly state otherwise, any Contribution intentionally submitted for inclusion in the Work by You to the Licensor shall be under the terms and conditions of this License, without any additional terms or conditions. Notwithstanding the above, nothing herein shall supersede or modify the terms of any separate license agreement you may have executed with Licensor regarding such Contributions.
+
+6. Trademarks. This License does not grant permission to use the trade names, trademarks, service marks, or product names of the Licensor, except as required for reasonable and customary use in describing the origin of the Work and reproducing the content of the NOTICE file.
+
+7. Disclaimer of Warranty. Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with Your exercise of permissions under this License.
+
+8. Limitation of Liability. In no event and under no legal theory, whether in tort (including negligence), contract, or otherwise, unless required by applicable law (such as deliberate and grossly negligent acts) or agreed to in writing, shall any Contributor be liable to You for damages, including any direct, indirect, special, incidental, or consequential damages of any character arising as a result of this License or out of the use or inability to use the Work (including but not limited to damages for loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses), even if such Contributor has been advised of the possibility of such damages.
+
+9. Accepting Warranty or Additional Liability. While redistributing the Work or Derivative Works thereof, You may choose to offer, and charge a fee for, acceptance of support, warranty, indemnity, or other liability obligations and/or rights consistent with this License. However, in accepting such obligations, You may act only on Your own behalf and on Your sole responsibility, not on behalf of any other Contributor, and only if You agree to indemnify, defend, and hold each Contributor harmless for any liability incurred by, or claims asserted against, such Contributor by reason of your accepting any such warranty or additional liability.
+
+END OF TERMS AND CONDITIONS
+
+APPENDIX: How to apply the Apache License to your work.
+
+To apply the Apache License to your work, attach the following boilerplate notice, with the fields enclosed by brackets "[]" replaced with your own identifying information. (Don't include the brackets!)  The text should be enclosed in the appropriate comment syntax for the file format. We also recommend that a file or class name and description of purpose be included on the same "printed page" as the copyright notice for easier identification within third-party archives.
+
+Copyright [yyyy] [name of copyright owner]
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+
+
+Open Source Software Licensed under the ISC License:
+--------------------------------------------------------------------
+1. librosa  https://pypi.org/project/librosa
+2. shellingham 1.5.4 https://pypi.org/project/shellingham
+Copyright (c) 2018; Tzu-ping Chung <uranusjr@gmail.com>
+3. librosa 0.11.0 
+4. requests-oauthlib 2.0.0 https://pypi.org/project/requests-oauthlib
+Copyright (c) 2014 Kenneth Reitz.
+5. librosa 0.8.1 https://pypi.org/project/librosa
+Copyright (c) 2013--2017; librosa development team.
+6. librosa 0.10.2.post1 https://pypi.org/project/librosa
+Copyright (c) 2013--2023; librosa development team.
+Copyright (c) 2013--2017; librosa development team.
+7. librosa 0.10.2 https://pypi.org/project/librosa
+Copyright (c) 2013--2023; librosa development team.
+Copyright (c) 2013--2017; librosa development team.
+Terms of the ISC: 
+--------------------------------------------------------------------
+ISC License
+
+Permission to use, copy, modify, and /or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+
+
+Open Source Software Licensed under the MIT License:
+--------------------------------------------------------------------
+1. dbrx 3.0.1 
+2. jaconv 0.4.0 https://pypi.org/project/jaconv
+Copyright (c) 2014 Yukino Ikegami
+3. openai-whisper 20231117 https://pypi.org/project/openai-whisper
+Copyright (c) 2022 OpenAI
+4. rotary-embedding-torch 0.8.6 https://pypi.org/project/rotary-embedding-torch
+Copyright (c) 2021 Phil Wang
+5. triton 2.3.1 https://pypi.org/project/triton
+6. charset-normalizer 3.4.1 https://pypi.org/project/charset-normalizer
+Copyright (c) 2019 TAHRI Ahmed R.
+7. tabulate 0.9.0 https://pypi.org/project/tabulate
+Copyright (c) 2011-2020 Sergey Astanin and contributors
+8. exceptiongroup 1.2.2 https://pypi.org/project/exceptiongroup
+Copyright (c) 2022 Alex Gr-
+Copyright (c) 2022 Alex Gr..nholm
+9. setuptools 75.1.0 https://pypi.org/project/setuptools
+Copyright Jason R. Coombs
+10. coloredlogs 15.0.1 https://pypi.org/project/coloredlogs
+Copyright 2020 Peter Odding.
+Copyright (c) 2020 Peter Odding
+11. mypy-extensions 1.0.0 https://pypi.org/project/mypy-extensions
+Copyright (c) 2016-2017 Jukka Lehtosalo and contributors
+12. gptj 3.0.9 https://pypi.org/project/gptj
+Copyright (c) 2021 Michael D Arana
+Copyright Michael D Arana
+13. einx 0.3.0 https://pypi.org/project/einx
+14. numba 0.61.2 
+15. ffmpy 0.5.0 https://pypi.org/project/ffmpy
+Copyright 2016 Andrii Yurchuk
+16. fastapi 0.115.6 https://pypi.org/project/fastapi
+Copyright (c) 2018 Sebasti :n Ram.0rez
+Copyright (c) 2018 Sebasti..n Ram..rez
+17. beautifulsoup4 4.13.3 https://pypi.org/project/beautifulsoup4
+Copyright (c) 2004-2019 Leonard Richardson
+Copyright (c) 2004-2022 Leonard Richardson
+Copyright (c) Leonard Richardson
+18. inflect 7.3.1 https://pypi.org/project/inflect
+Copyright Jason R. Coombs
+19. onnxruntime-gpu 1.18.0 https://pypi.org/project/onnxruntime-gpu
+Copyright (c) Microsoft Corporation
+Copyright (c) Microsoft Corporation.
+20. pytz 2025.1 https://pypi.org/project/pytz
+Copyright (c) 2003-2019 Stuart Bishop <stuart@stuartbishop.net>
+21. mamba 0.11.3 https://pypi.org/project/mamba
+22. torchdiffeq 0.2.5 https://pypi.org/project/torchdiffeq
+Copyright (c) 2018 Ricky Tian Qi Chen
+23. qwen 0.1.1 https://pypi.org/project/qwen
+24. tiktoken 0.9.0 https://pypi.org/project/tiktoken
+Copyright (c) 2022 OpenAI; Shantanu Jain
+25. bitsandbytes 0.46.1 
+26. tomlkit 0.12.0 https://pypi.org/project/tomlkit
+Copyright (c) 2018 S6.bastien Eustace
+Copyright (c) 2018 TOML authors
+Copyright Rebecca Turner <me@re-becca.org>
+Copyright (c) 2018 S..bastien Eustace
+27. triton 2.3.0 https://pypi.org/project/triton
+28. crcmod 1.7 https://pypi.org/project/crcmod
+Copyright (c) 2010  Raymond L. Buvel
+Copyright (c) 2010  Craig McQueen
+29. rich 13.7.1 https://pypi.org/project/rich
+Copyright 2020 Will McGugan
+Copyright (c) 2020 Will McGugan
+30. setuptools 75.8.0 https://pypi.org/project/setuptools
+Copyright Jason R. Coombs
+31. rich 13.9.4 https://pypi.org/project/rich
+Copyright 2020 Will McGugan
+Copyright (c) 2020 Will McGugan
+32. Matcha-TTS v0.0.7 https://github.com/shivammehta25/matcha-tts
+33. pyworld 0.3.4 https://pypi.org/project/pyworld
+Copyright 2016 pyworld contributors
+Copyright (c) 2010  M. Morise                                      
+34. medusa 0.5.4 https://pypi.org/project/medusa
+35. zhon 2.1.1 https://pypi.org/project/zhon
+Copyright (c) 2013 Thomas Roten
+Copyright (c) 2013-2014 Thomas Roten
+36. soupsieve 2.6 https://pypi.org/project/soupsieve
+Copyright (c) 2018 - 2023 Isaac Muse <isaacmuse@gmail.com>
+Copyright (c) 2018 - 2021 Isaac Muse <isaacmuse@gmail.com>
+Copyright (c) 2018 - 2022 Isaac Muse <isaacmuse@gmail.com>
+37. matcha-tts 0.0.5.1 https://pypi.org/project/matcha-tts
+38. ema_pytorch 0.7.7 
+39. pyparsing 3.2.3 https://pypi.org/project/pyparsing
+40. more-itertools 10.7.0 
+41. commandr 1.7.0 https://pypi.org/project/commandr
+42. tomlkit 0.13.2 https://pypi.org/project/tomlkit
+Copyright (c) 2018 S6.bastien Eustace
+Copyright (c) 2018 TOML authors
+Copyright Rebecca Turner <me@re-becca.org>
+Copyright (c) 2018 S..bastien Eustace
+43. h11 0.14.0 https://pypi.org/project/h11
+Copyright (c) 2016 Nathaniel J. Smith <njs@pobox.com> and other contributors
+44. activations 0.1.0 https://pypi.org/project/activations
+Copyright (c) 2020 densechen
+45. thop 0.1.1.post2209072238 https://pypi.org/project/thop
+Copyright (c) 2018 Ligeng Zhu
+46. funasr  https://pypi.org/project/funasr
+47. configparser 5.3.0 https://pypi.org/project/configparser
+Copyright Jason R. Coombs
+48. vocos 0.1.0 https://pypi.org/project/vocos
+49. gdown 5.2.0 https://pypi.org/project/gdown
+Copyright (c) 2015 - 2018 Kentaro Wada.
+50. pydub 0.25.1 https://pypi.org/project/pydub
+Copyright (c) 2011 James Robert; http:  jiaaro.com
+51. tomli 2.2.1 https://pypi.org/project/tomli
+Copyright (c) 2021 Taneli Hukkinen
+52. hydra-core 1.1 
+53. audioread 3.0.1 https://pypi.org/project/audioread
+Copyright (c) 2011-2018 Adrian Sampson
+54. transformers-stream-generator 0.0.5 https://pypi.org/project/transformers-stream-generator
+Copyright (c) 2023 lowinli
+55. cffi  https://pypi.org/project/cffi
+56. faster_whisper 1.1.1 
+57. DNS-Challenge 71eb90d https://github.com/microsoft/dns-challenge
+Copyright (c) Microsoft Corporation.
+58. zipp 3.21.0 https://pypi.org/project/zipp
+Copyright Jason R. Coombs
+59. fairseq2 0.3.0 
+60. jieba 0.42.1 https://pypi.org/project/jieba
+Copyright (c) 2013 Sun Junyi
+61. funasr 1.0.27 https://pypi.org/project/funasr
+Copyright (c) 2022 Alibaba
+62. pyaudio 0.2.14 https://pypi.org/project/pyaudio
+Copyright (c) 2006 Hubert Pham
+63. fonttools 4.57.0 
+64. sniffio 1.3.1 https://pypi.org/project/sniffio
+65. ruamel.yaml 0.18.10 https://pypi.org/project/ruamel.yaml
+Copyright (c) 2014-2022 Anthon van der Neut; Ruamel bvba
+Copyright (c) 2014-2023 Anthon van der Neut; Ruamel bvba
+Copyright (c) 2014-2021 Anthon van der Neut; Ruamel bvba
+66. loguru 0.7.3 https://pypi.org/project/loguru
+Copyright (c) 2017 
+67. PyYAML 6.0.2 https://pypi.org/project/pyyaml
+Copyright (c) 2017-2021 Ingy d5:t Net
+Copyright (c) 2017-2021 Ingy d..t Net
+68. attrs 25.1.0 https://pypi.org/project/attrs
+Copyright (c) 2015 Hynek Schlawack and the attrs contributors
+Copyright (c) 2015 Hynek Schlawack
+69. mdurl 0.1.2 https://pypi.org/project/mdurl
+Copyright (c) 2015 Vitaly Puzrin; Alex Kocharin.
+Copyright (c) 2021 Taneli Hukkinen
+70. hjson 3.1.0 https://pypi.org/project/hjson
+Copyright (c) 2006 Bob Ippolito.  All rights reserved.
+Copyright (c) 2006 Bob Ippolito
+Copyright (c) 2015 Christian Zangl
+71. pyfunctional 1.5.0 https://pypi.org/project/pyfunctional
+72. py-cpuinfo 9.0.0 https://pypi.org/project/py-cpuinfo
+Copyright (c) 2014-2022 Matthew Brennan Jones <matthew.brennan.jones@gmail.com>
+73. wheel 0.45.1 https://pypi.org/project/wheel
+Copyright (c) 2012 Daniel Holth <dholth@fastmail.fm> and contributors
+copyright (c) 2012-2014 Daniel Holth <dholth@fastmail.fm> and
+74. blessed 1.20.0 https://pypi.org/project/blessed
+Copyright (c) 2011 Erik Rose
+Copyright (c) 2014 Jeff Quast
+75. hackathon-template v1.4.0 https://github.com/kinoai/hackathon-template
+76. bitsandbytes 0.45.5 
+77. anyio 4.9.0 https://pypi.org/project/anyio
+Copyright (c) 2018 Alex Gr..nholm
+Copyright (c) 2018 Alex Gr24nholm
+78. gpustat 1.1.1 https://pypi.org/project/gpustat
+Copyright (c) 2016 Jongwook Choi
+79. markdown-it-py 3.0.0 https://pypi.org/project/markdown-it-py
+Copyright (c) 2020 ExecutableBookProject
+Copyright (c) 2014 Vitaly Puzrin; Alex Kocharin.
+80. phi 0.6.7 https://pypi.org/project/phi
+81. pillow 11.1.0 https://pypi.org/project/pillow
+Copyright 00 1997-2011 by Secret Labs AB
+Copyright 80 2015 Information Technology Authority (ITA) <foss@ita.gov.om>
+Copyright .. 1997-2011 by Secret Labs AB
+Copyright .. 2015 Information Technology Authority (ITA) <foss@ita.gov.om>
+Copyright (c) 2018 Roel Nieskens; https:  pixelambacht.nl Copyright (c) 2018 Google LLC
+82. rootutils 1.0.7 https://pypi.org/project/rootutils
+Copyright (c) 2022 ashleve
+83. jmespath 0.10.0 https://pypi.org/project/jmespath
+Copyright (c) 2013 Amazon.com; Inc. or its affiliates.  All Rights Reserved
+84. more-itertools 10.6.0 https://pypi.org/project/more-itertools
+Copyright (c) 2012 Erik Rose
+85. conformer 0.3.2 https://pypi.org/project/conformer
+Copyright (c) 2020 Phil Wang
+86. editdistance 0.8.1 https://pypi.org/project/editdistance
+Copyright (c) 2019 Hiroyuki Tanaka.
+Copyright (c) 2019 Hiroyuki Tanaka
+87. typer 0.15.2 https://pypi.org/project/typer
+Copyright (c) 2019 Sebasti76n Ram..rez
+Copyright (c) 2019 Sebasti..n Ram..rez
+88. tiktoken 0.7.0 https://pypi.org/project/tiktoken
+Copyright (c) 2022 OpenAI; Shantanu Jain
+89. ema-pytorch 0.7.7 https://pypi.org/project/ema-pytorch
+Copyright (c) 2022 Phil Wang
+90. onnxruntime 1.13.1 https://pypi.org/project/onnxruntime
+Copyright (c) Microsoft Corporation
+91. tensorboardX 2.6.2.2 https://pypi.org/project/tensorboardx
+Copyright (c) 2017 Tzu-Wei Huang
+92. addict 2.4.0 https://pypi.org/project/addict
+Copyright (c) 2014 Mats Julian Olsen
+93. cffi 1.17.1 https://pypi.org/project/cffi
+94. fairseq2n 0.3.0 
+95. wcwidth 0.2.13 https://pypi.org/project/wcwidth
+Copyright (c) 2014 Jeff Quast <contact@jeffquast.com>
+96. simplejson 3.19.3 https://pypi.org/project/simplejson
+Copyright (c) 2006 Bob Ippolito
+Copyright (c) 2006 Bob Ippolito.
+97. annotated-types 0.7.0 https://pypi.org/project/annotated-types
+Copyright (c) 2022 the contributors
+98. wandb 0.19.9 
+99. hydra-core 1.3.2 https://pypi.org/project/hydra-core
+Copyright (c) Facebook; Inc. and its affiliates.
+100. fastapi-cli 0.0.4 https://pypi.org/project/fastapi-cli
+101. einops 0.8.1 
+102. gdown 5.1.0 https://pypi.org/project/gdown
+Copyright (c) 2015 - 2018 Kentaro Wada.
+103. cachetools 5.5.2 https://pypi.org/project/cachetools
+Copyright (c) 2014-2022 Thomas Kemmer
+Copyright (c) 2014-2021 Thomas Kemmer
+104. pydantic 2.7.0 https://pypi.org/project/pydantic
+Copyright (c) 2017; 2018; 2019; 2020; 2021 Samuel Colvin and other contributors
+Copyright (c) 2017; 2018; 2019; 2020; 2021 Samuel Colvin and other contributors.
+Copyright (c) 2017 - 2022 Samuel Colvin and other contributors
+105. ruamel.yaml.clib 0.2.12 https://pypi.org/project/ruamel.yaml.clib
+Copyright (c) 2019-2021 Anthon van der Neut; Ruamel bvba
+Copyright (c) 2019-2020 Anthon van der Neut; Ruamel bvba
+Copyright (c) 2019-2022 Anthon van der Neut; Ruamel bvba
+106. funasr 1.2.6 
+Terms of the MIT: 
+--------------------------------------------------------------------
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+
+Open Source Software Licensed under the X11 License:
+--------------------------------------------------------------------
+1. mamba 0.11.3 https://pypi.org/project/mamba
+Terms of the X11: 
+--------------------------------------------------------------------
+X11 License
+
+Copyright(C) 1996 X Consortium
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE X CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Except as contained in this notice, the name of the X Consortium shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization from the X Consortium.
+
+X Window System is a trademark of X Consortium, Inc.
+
+
+
