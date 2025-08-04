@@ -9,7 +9,7 @@
 
 - **Name:** CSEMOTIONS
 - **Total Duration:** ~10 hours
-- **Speakers:** 6 (3 male, 3 female) native Mandarin speakers, all professional voice actors
+- **Speakers:** 10 (5 male, 5 female) native Mandarin speakers, all professional voice actors
 - **Emotions:** Neutral, Happy, Angry, Sad, Surprise, Disgust, Fear
 - **Language:** Mandarin Chinese
 - **Sampling Rate:** 48kHz, 24-bit PCM

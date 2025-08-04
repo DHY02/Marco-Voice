@@ -326,7 +326,7 @@ Below are sample outputs from our TTS system demonstrating different emotional e
 ```bibtex
 @article{tian2024marcovoice,
   title={Marco-Voice Technical Report},
-  author={Tian, Fengping and Lyu, Chenyang and Ni, Xuanfan and Sun, Haoqin and Qian, Zhiqiang and Li, Haijun and Wang, Longyue and Xu, Zhao and Luo, Weihua and Zhang, Kaifu},
+  author={Tian, Fengping and Lyu, Chenyang and Ni, Xuanfan and Sun, Haoqin and Li, Qingjuan and Qian, Zhiqiang and Li, Haijun and Wang, Longyue and Xu, Zhao and Luo, Weihua and Zhang, Kaifu},
   year={2025},
   note={Technical Report},
 }
