@@ -54,13 +54,13 @@ Our approach introduces an effective speaker-emotion disentanglement mechanism w
 
 | Label    | Duration | Sentences |
 | -------- | -------- | --------- |
-| sad      | 1.73h    | 546       |
-| angry    | 1.43h    | 769       |
-| happy    | 1.51h    | 603       |
-| surprise | 1.25h    | 508       |
-| fearful  | 1.92h    | 623       |
-| joking   | 1.23h    | 621       |
-| neutral  | 1.14h    | 490       |
+| Sad      | 1.73h    | 546       |
+| Angry    | 1.43h    | 769       |
+| Happy    | 1.51h    | 603       |
+| Surprise | 1.25h    | 508       |
+| Fearful  | 1.92h    | 623       |
+| Playfulness   | 1.23h    | 621       |
+| Neutral  | 1.14h    | 490       |
 | **Total**| **10.24h**| **4160**  |
 
 
@@ -206,9 +206,9 @@ emo = {"伤心": "Sad", "恐惧":"fearful", "快乐": "Happy", "惊喜": "Surpri
 prompt_speech_16k = load_wav("your_audio_path/exam.wav", 16000)
 emo_type="开心"
 if emo_type in ["伤心", "恐惧"]:
-    emotion_info = torch.load("./emotion_info.pt")["zhu"][emo.get(emo_type)]
+    emotion_info = torch.load("./assets/emotion_info.pt")["zhu"][emo.get(emo_type)]
 else:
-    emotion_info = torch.load("./emotion_info.pt")["song"][emo.get(emo_type)]
+    emotion_info = torch.load("./assets/emotion_info.pt")["song"][emo.get(emo_type)]
 # Voice cloning with discrete emotion
 for i, j in enumerate(model.synthesize(
     text="今天的天气真不错，我们出去散步吧！",
