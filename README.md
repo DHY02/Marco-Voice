@@ -314,21 +314,24 @@ Below are sample outputs from our TTS system demonstrating different emotional e
 
 | Emotion        | Speaker001 Sample | Speaker002 Sample | Speaker003 Sample | Description                       |
 |----------------|------------------|------------------|------------------|-----------------------------------|
-| **Neutral**    | <audio controls><source src="assets/audios/emotion_demo/Speaker001_Neutral_0.webm" type="audio/webm"></audio> | <audio controls><source src="assets/audios/emotion_demo/Speaker002_Neutral_0.webm" type="audio/webm"></audio> | <audio controls><source src="assets/audios/emotion_demo/Speaker003_Neutral_0.webm" type="audio/webm"></audio> | Natural, conversational tone      |
-| **Happy**      | <audio controls><source src="assets/audios/emotion_demo/Speaker001_Happy_0.webm" type="audio/webm"></audio>   | <audio controls><source src="assets/audios/emotion_demo/Speaker002_Happy_0.webm" type="audio/webm"></audio>   | <audio controls><source src="assets/audios/emotion_demo/Speaker003_Happy_0.webm" type="audio/webm"></audio>   | Cheerful and upbeat expression    |
-| **Sad**        | <audio controls><source src="assets/audios/emotion_demo/Speaker001_Sad_0.webm" type="audio/webm"></audio>     | <audio controls><source src="assets/audios/emotion_demo/Speaker002_Sad_0.webm" type="audio/webm"></audio>     | <audio controls><source src="assets/audios/emotion_demo/Speaker003_Sad_0.webm" type="audio/webm"></audio>     | Melancholic and subdued tone      |
-| **Angry**      | <audio controls><source src="assets/audios/emotion_demo/Speaker001_Angry_0.webm" type="audio/webm"></audio>   | <audio controls><source src="assets/audios/emotion_demo/Speaker002_Angry_0.webm" type="audio/webm"></audio>   | <audio controls><source src="assets/audios/emotion_demo/Speaker003_Angry_0.webm" type="audio/webm"></audio>   | Intense and forceful delivery     |
-| **Fearful**    | <audio controls><source src="assets/audios/emotion_demo/Speaker001_Fearful_0.webm" type="audio/webm"></audio> | <audio controls><source src="assets/audios/emotion_demo/Speaker002_Fearful_0.webm" type="audio/webm"></audio> | <audio controls><source src="assets/audios/emotion_demo/Speaker003_Fearful_0.webm" type="audio/webm"></audio> | Anxious and trembling voice       |
-| **Surprise**   | <audio controls><source src="assets/audios/emotion_demo/Speaker001_Surprise_0.webm" type="audio/webm"></audio>| <audio controls><source src="assets/audios/emotion_demo/Speaker002_Surprise_0.webm" type="audio/webm"></audio>| <audio controls><source src="assets/audios/emotion_demo/Speaker003_Surprise_0.webm" type="audio/webm"></audio>| Excited and astonished expression |
-| **Playfulness**| <audio controls><source src="assets/audios/emotion_demo/Speaker001_Playfulness_0.webm" type="audio/webm"></audio>| <audio controls><source src="assets/audios/emotion_demo/Speaker002_Playfulness_0.webm" type="audio/webm"></audio>| <audio controls><source src="assets/audios/emotion_demo/Speaker003_Playfulness_0.webm" type="audio/webm"></audio>| Playful and teasing tone          |
+| **Neutral**    | <audio controls><source src="assets/audios/Speaker001_Neutral_0.webm" type="audio/webm"></audio> | <audio controls><source src="assets/audios/Speaker002_Neutral_0.webm" type="audio/webm"></audio> | <audio controls><source src="assets/audios/Speaker003_Neutral_0.webm" type="audio/webm"></audio> | Natural, conversational tone      |
+| **Happy**      | <audio controls><source src="assets/audios/Speaker001_Happy_0.webm" type="audio/webm"></audio>   | <audio controls><source src="assets/audios/Speaker002_Happy_0.webm" type="audio/webm"></audio>   | <audio controls><source src="assets/audios/Speaker003_Happy_0.webm" type="audio/webm"></audio>   | Cheerful and upbeat expression    |
+| **Sad**        | <audio controls><source src="assets/audios/Speaker001_Sad_0.webm" type="audio/webm"></audio>     | <audio controls><source src="assets/audios/Speaker002_Sad_0.webm" type="audio/webm"></audio>     | <audio controls><source src="assets/audios/Speaker003_Sad_0.webm" type="audio/webm"></audio>     | Melancholic and subdued tone      |
+| **Angry**      | <audio controls><source src="assets/audios/Speaker001_Angry_0.webm" type="audio/webm"></audio>   | <audio controls><source src="assets/audios/Speaker002_Angry_0.webm" type="audio/webm"></audio>   | <audio controls><source src="assets/audios/Speaker003_Angry_0.webm" type="audio/webm"></audio>   | Intense and forceful delivery     |
+| **Fearful**    | <audio controls><source src="assets/audios/Speaker001_Fearful_0.webm" type="audio/webm"></audio> | <audio controls><source src="assets/audios/Speaker002_Fearful_0.webm" type="audio/webm"></audio> | <audio controls><source src="assets/audios/Speaker003_Fearful_0.webm" type="audio/webm"></audio> | Anxious and trembling voice       |
+| **Surprise**   | <audio controls><source src="assets/audios/Speaker001_Surprise_0.webm" type="audio/webm"></audio>| <audio controls><source src="assets/audios/Speaker002_Surprise_0.webm" type="audio/webm"></audio>| <audio controls><source src="assets/audios/Speaker003_Surprise_0.webm" type="audio/webm"></audio>| Excited and astonished expression |
+| **Playfulness**| <audio controls><source src="assets/audios/Speaker001_Playfulness_0.webm" type="audio/webm"></audio>| <audio controls><source src="assets/audios/Speaker002_Playfulness_0.webm" type="audio/webm"></audio>| <audio controls><source src="assets/audios/Speaker003_Playfulness_0.webm" type="audio/webm"></audio>| Playful and teasing tone          |
 
 ## 📜 Citation
 ```bibtex
-@article{tian2024marcovoice,
-  title={Marco-Voice Technical Report},
-  author={Tian, Fengping and Lyu, Chenyang and Ni, Xuanfan and Sun, Haoqin and Li, Qingjuan and Qian, Zhiqiang and Li, Haijun and Wang, Longyue and Xu, Zhao and Luo, Weihua and Zhang, Kaifu},
-  year={2025},
-  note={Technical Report},
+@misc{tian2025marcovoicetechnicalreport,
+      title={Marco-Voice Technical Report}, 
+      author={Fengping Tian and Chenyang Lyu and Xuanfan Ni and Haoqin Sun and Qingjuan Li and Zhiqiang Qian and Haijun Li and Longyue Wang and Zhao Xu and Weihua Luo and Kaifu Zhang},
+      year={2025},
+      eprint={2508.02038},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2508.02038}, 
 }
 ```
 
