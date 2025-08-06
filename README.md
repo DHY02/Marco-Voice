@@ -16,7 +16,6 @@
 
 </div>
 
-
 ## 📖 Overview
 
 This paper presents a multifunctional speech synthesis system that integrates voice cloning, emotion control, and cross-lingual synthesis within a unified framework. The goal of this work is to address longstanding challenges in achieving highly expressive, controllable, and natural speech generation that faithfully preserves speaker identity across diverse linguistic and emotional contexts.
@@ -321,6 +320,12 @@ Below are sample outputs from our TTS system demonstrating different emotional e
 | Fearful      | [Listen](assets/audios/Speaker001_Fearful_0.webm)                   | [Listen](assets/audios/Speaker002_Fearful_0.webm)                   | [Listen](assets/audios/Speaker003_Fearful_0.webm)                   | Anxious and trembling voice       |
 | Surprise     | [Listen](assets/audios/Speaker001_Surprise_0.webm)                  | [Listen](assets/audios/Speaker002_Surprise_0.webm)                  | [Listen](assets/audios/Speaker003_Surprise_0.webm)                  | Excited and astonished expression |
 | Playfulness  | [Listen](assets/audios/Speaker001_Playfulness_0.webm)               | [Listen](assets/audios/Speaker002_Playfulness_0.webm)               | [Listen](assets/audios/Speaker003_Playfulness_0.webm)               | Playful and teasing tone          |
+
+## Comments
+
+We welcome any suggestions from the community to our project and we will continue to improve this project. 
+
+我们欢迎社区对我们的项目提出任何建议，我们将持续改进和提升这个项目。
 
 ## 📜 Citation
 ```bibtex
