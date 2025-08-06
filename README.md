@@ -7,7 +7,7 @@
   <p>Empowering Natural Human-Computer Interaction through Expressive Speech Synthesis</p>
 </div>
 
-[![Paper](https://img.shields.io/badge/Paper-PDF-%23B31B1B)]([https://arxiv.org/abs/XXXX.XXXX](https://arxiv.org/abs/2508.02038))
+[![Paper](https://img.shields.io/badge/Paper-PDF-%23B31B1B)](https://arxiv.org/abs/2508.02038)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 <img src="https://img.shields.io/github/stars/AIDC-AI/Marco-Voice?color=yellow" alt="Stars">
 [![HuggingFace Dataset](https://img.shields.io/badge/Dataset-HuggingFace-orange)](https://huggingface.co/datasets/AIDC-AI/CSEMOTIONS)
