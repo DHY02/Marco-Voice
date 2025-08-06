@@ -310,17 +310,15 @@ We conducted a blind human evaluation with four annotators. The Likert scale ran
 
 Below are sample outputs from our TTS system demonstrating different emotional expressions, with three different speakers:
 
-### Emotional Speech Synthesis
-
-| Emotion        | Speaker001 Sample | Speaker002 Sample | Speaker003 Sample | Description                       |
-|----------------|------------------|------------------|------------------|-----------------------------------|
-| **Neutral**    | <audio controls><source src="assets/audios/Speaker001_Neutral_0.webm" type="audio/webm"></audio> | <audio controls><source src="assets/audios/Speaker002_Neutral_0.webm" type="audio/webm"></audio> | <audio controls><source src="assets/audios/Speaker003_Neutral_0.webm" type="audio/webm"></audio> | Natural, conversational tone      |
-| **Happy**      | <audio controls><source src="assets/audios/Speaker001_Happy_0.webm" type="audio/webm"></audio>   | <audio controls><source src="assets/audios/Speaker002_Happy_0.webm" type="audio/webm"></audio>   | <audio controls><source src="assets/audios/Speaker003_Happy_0.webm" type="audio/webm"></audio>   | Cheerful and upbeat expression    |
-| **Sad**        | <audio controls><source src="assets/audios/Speaker001_Sad_0.webm" type="audio/webm"></audio>     | <audio controls><source src="assets/audios/Speaker002_Sad_0.webm" type="audio/webm"></audio>     | <audio controls><source src="assets/audios/Speaker003_Sad_0.webm" type="audio/webm"></audio>     | Melancholic and subdued tone      |
-| **Angry**      | <audio controls><source src="assets/audios/Speaker001_Angry_0.webm" type="audio/webm"></audio>   | <audio controls><source src="assets/audios/Speaker002_Angry_0.webm" type="audio/webm"></audio>   | <audio controls><source src="assets/audios/Speaker003_Angry_0.webm" type="audio/webm"></audio>   | Intense and forceful delivery     |
-| **Fearful**    | <audio controls><source src="assets/audios/Speaker001_Fearful_0.webm" type="audio/webm"></audio> | <audio controls><source src="assets/audios/Speaker002_Fearful_0.webm" type="audio/webm"></audio> | <audio controls><source src="assets/audios/Speaker003_Fearful_0.webm" type="audio/webm"></audio> | Anxious and trembling voice       |
-| **Surprise**   | <audio controls><source src="assets/audios/Speaker001_Surprise_0.webm" type="audio/webm"></audio>| <audio controls><source src="assets/audios/Speaker002_Surprise_0.webm" type="audio/webm"></audio>| <audio controls><source src="assets/audios/Speaker003_Surprise_0.webm" type="audio/webm"></audio>| Excited and astonished expression |
-| **Playfulness**| <audio controls><source src="assets/audios/Speaker001_Playfulness_0.webm" type="audio/webm"></audio>| <audio controls><source src="assets/audios/Speaker002_Playfulness_0.webm" type="audio/webm"></audio>| <audio controls><source src="assets/audios/Speaker003_Playfulness_0.webm" type="audio/webm"></audio>| Playful and teasing tone          |
+| Emotion      | Speaker001 Sample                                                    | Speaker002 Sample                                                    | Speaker003 Sample                                                    | Description                       |
+|--------------|---------------------------------------------------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------|-----------------------------------|
+| Neutral      | [Listen](assets/audios/Speaker001_Neutral_0.webm)                   | [Listen](assets/audios/Speaker002_Neutral_0.webm)                   | [Listen](assets/audios/Speaker003_Neutral_0.webm)                   | Natural, conversational tone      |
+| Happy        | [Listen](assets/audios/Speaker001_Happy_0.webm)                     | [Listen](assets/audios/Speaker002_Happy_0.webm)                     | [Listen](assets/audios/Speaker003_Happy_0.webm)                     | Cheerful and upbeat expression    |
+| Sad          | [Listen](assets/audios/Speaker001_Sad_0.webm)                       | [Listen](assets/audios/Speaker002_Sad_0.webm)                       | [Listen](assets/audios/Speaker003_Sad_0.webm)                       | Melancholic and subdued tone      |
+| Angry        | [Listen](assets/audios/Speaker001_Angry_0.webm)                     | [Listen](assets/audios/Speaker002_Angry_0.webm)                     | [Listen](assets/audios/Speaker003_Angry_0.webm)                     | Intense and forceful delivery     |
+| Fearful      | [Listen](assets/audios/Speaker001_Fearful_0.webm)                   | [Listen](assets/audios/Speaker002_Fearful_0.webm)                   | [Listen](assets/audios/Speaker003_Fearful_0.webm)                   | Anxious and trembling voice       |
+| Surprise     | [Listen](assets/audios/Speaker001_Surprise_0.webm)                  | [Listen](assets/audios/Speaker002_Surprise_0.webm)                  | [Listen](assets/audios/Speaker003_Surprise_0.webm)                  | Excited and astonished expression |
+| Playfulness  | [Listen](assets/audios/Speaker001_Playfulness_0.webm)               | [Listen](assets/audios/Speaker002_Playfulness_0.webm)               | [Listen](assets/audios/Speaker003_Playfulness_0.webm)               | Playful and teasing tone          |
 
 ## 📜 Citation
 ```bibtex
