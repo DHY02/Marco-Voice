@@ -4,7 +4,7 @@
 
 #  Marco-Voice: A Unified Framework for Expressive Speech Synthesis with Voice Cloning
 
-<p>🎧 Empowering Natural Human-Computer Interaction through Expressive Speech Synthesis 🤗</p>
+<p align="center">🎧 Empowering Natural Human-Computer Interaction through Expressive Speech Synthesis 🤗</p>
 
 <div align="center">
 <img src="https://img.shields.io/badge/License-Apache%202.0-green.svg" alt="License">
