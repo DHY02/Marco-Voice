@@ -1,9 +1,9 @@
 <div align="center">
 
 # Marco-Voice: A Unified Framework for Expressive Speech Synthesis with Voice Cloning
-> **Voice Cloning · Emotion Control**
+> **Voice Cloning 🎧 · Emotion Control 😄**
 <div align="center">
-  <img src="assets/marco-voice-logo-3.png" alt="Marco-Voice Ecosystem" width="250">
+  <img src="assets/marco-voice-logo-3.png" alt="Marco-Voice Ecosystem" width="200">
   <p>Empowering Natural Human-Computer Interaction through Expressive Speech Synthesis</p>
 </div>
 
