@@ -2,7 +2,7 @@
   <img src="assets/marco-voice-logo-3.png" alt="Marco-Voice Ecosystem" width="200">
 </p>
 
-# 🎧Marco-Voice🤗: A Unified Framework for Expressive Speech Synthesis with Voice Cloning
+# 🎧 Marco-Voice 🤗 A Unified Framework for Expressive Speech Synthesis with Voice Cloning
 
 
 <div align="center">
@@ -24,7 +24,7 @@
 
 [_**Alibaba International Digital Commerce**_](https://aidc-ai.com)
 
-:octocat: [**Github**](https://github.com/AIDC-AI/Marco-o1)  🤗  [**Hugging Face**](https://huggingface.co/AIDC-AI/Marco-o1) 📝  [**Paper**](https://arxiv.org/abs/2411.14405) 🧑‍💻 [**Model**](https://huggingface.co/AIDC-AI/Marco-o1) 🗂️  [**Data**](https://github.com/AIDC-AI/Marco-o1/tree/main/data) 📽️  [**Demo**](https://huggingface.co/AIDC-AI/Marco-o1)
+:octocat: [**Github**](https://github.com/AIDC-AI/Marco-Voice)  🤗  [**Hugging Face**](https://huggingface.co/datasets/AIDC-AI/CSEMOTIONS) 📝  [**Paper**](https://arxiv.org/abs/2508.02038) 🧑‍💻 [**Model**]() 🗂️  [**Data**](https://github.com/AIDC-AI/Marco-Voice/tree/main/Dataset) 📽️  [**Demo**]()
 
 </div>
 
