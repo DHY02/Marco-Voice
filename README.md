@@ -2,8 +2,9 @@
   <img src="assets/marco-voice-logo-3.png" alt="Marco-Voice Ecosystem" width="200">
 </p>
 
-# 🎧 Marco-Voice 🤗 A Unified Framework for Expressive Speech Synthesis with Voice Cloning
+#  Marco-Voice: A Unified Framework for Expressive Speech Synthesis with Voice Cloning
 
+<p>🎧 Empowering Natural Human-Computer Interaction through Expressive Speech Synthesis 🤗</p>
 
 <div align="center">
 <img src="https://img.shields.io/badge/License-Apache%202.0-green.svg" alt="License">
@@ -34,7 +35,7 @@
 ## 📖 Overview
 
 <!-- > **Voice Cloning  · Emotion Control 😄**
-<p>Empowering Natural Human-Computer Interaction through Expressive Speech Synthesis</p> -->
+ -->
 
 🎯 This project presents a multifunctional speech synthesis system that integrates **voice cloning**, **emotion control**, and **cross-lingual synthesis** within a unified framework. Our goal is to address longstanding challenges in achieving highly expressive, controllable, and natural speech generation that faithfully preserves speaker identity across diverse linguistic and emotional contexts.
 
