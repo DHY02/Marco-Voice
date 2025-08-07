@@ -33,10 +33,10 @@
 
 ## 📖 Overview
 
-> **Voice Cloning  · Emotion Control 😄**
-<p>Empowering Natural Human-Computer Interaction through Expressive Speech Synthesis</p>
+<!-- > **Voice Cloning  · Emotion Control 😄**
+<p>Empowering Natural Human-Computer Interaction through Expressive Speech Synthesis</p> -->
 
-This paper presents a multifunctional speech synthesis system that integrates voice cloning, emotion control, and cross-lingual synthesis within a unified framework. The goal of this work is to address longstanding challenges in achieving highly expressive, controllable, and natural speech generation that faithfully preserves speaker identity across diverse linguistic and emotional contexts.
+🎯 This project presents a multifunctional speech synthesis system that integrates **voice cloning**, **emotion control**, and **cross-lingual synthesis** within a unified framework. Our goal is to address longstanding challenges in achieving highly expressive, controllable, and natural speech generation that faithfully preserves speaker identity across diverse linguistic and emotional contexts.
 
 <div align="center">
 <img src="assets/marco_vocie_fig_v3.jpeg" alt="System Architecture" width="800">
