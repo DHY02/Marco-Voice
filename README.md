@@ -2,11 +2,11 @@
   <img src="assets/marco-voice-logo-3.png" alt="Marco-Voice Ecosystem" width="200">
 </p>
 
-#  Marco-Voice: A Unified Framework for Expressive Speech Synthesis with Voice Cloning
+# Marco-Voice: A Unified Framework for Expressive Speech Synthesis with Voice Cloning
 
 <p align="center">🎧 Empowering Natural Human-Computer Interaction through Expressive Speech Synthesis 🤗</p>
 
-<h4 align="center">
+<div align="center">
 <img src="https://img.shields.io/badge/License-Apache%202.0-green.svg" alt="License">
 <img src="https://img.shields.io/github/issues/AIDC-AI/Marco-Voice?color=red" alt="Issues">
 <img src="https://img.shields.io/github/stars/AIDC-AI/Marco-Voice?color=yellow" alt="Stars">
@@ -18,13 +18,13 @@
 <!-- ![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue) -->
 <!-- ![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0%2B-red) -->
 
-</h4>
+</div>
 
 <div align="center">
 
 <!-- **Affiliations:** -->
 
-⭐ _**AI Business**_ ⭐
+<p>⭐ _**AI Business**_ ⭐</p>
 
 [_**Alibaba International Digital Commerce**_](https://aidc-ai.com)
 
@@ -40,7 +40,7 @@
 🎯 This project presents a multifunctional speech synthesis system that integrates **voice cloning**, **emotion control**, and **cross-lingual synthesis** within a unified framework. Our goal is to address longstanding challenges in achieving highly expressive, controllable, and natural speech generation that faithfully preserves speaker identity across diverse linguistic and emotional contexts.
 
 <div align="center">
-<img src="assets/marco_vocie_fig_v3.jpeg" alt="System Architecture" width="800">
+<img src="assets/marco_vocie_fig_v3.jpeg" alt="System Architecture" width="850">
 </div>
 
 Our approach introduces an effective speaker-emotion disentanglement mechanism with in-batch contrastive learning, enabling independent manipulation of speaker identity and eemotional style, as well as rotational emotional embedding integration method for smooth emotion control. To support comprehensive training and evaluation, we construct CSEMOTIONS, a high-quality emotional speech dataset containing 10 hours of Mandarin speech from six professional speakers across seven emotional categories. Extensive experiments demonstrate that our system, Marco-Voice, achieves substantial improvements in both objective and subjective metrics. Comprehensive evaluations and analysis were conducted, results show that Marco-Voice delivers competitive performance in terms of speech clarity and emotional richness, representing a substantial advance in the field of expressive neural speech synthesis.
