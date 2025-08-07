@@ -6,7 +6,7 @@
 
 <p align="center">🎧 Empowering Natural Human-Computer Interaction through Expressive Speech Synthesis 🤗</p>
 
-<div align="center">
+<h4 align="center">
 <img src="https://img.shields.io/badge/License-Apache%202.0-green.svg" alt="License">
 <img src="https://img.shields.io/github/issues/AIDC-AI/Marco-Voice?color=red" alt="Issues">
 <img src="https://img.shields.io/github/stars/AIDC-AI/Marco-Voice?color=yellow" alt="Stars">
@@ -18,7 +18,7 @@
 <!-- ![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue) -->
 <!-- ![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0%2B-red) -->
 
-</div>
+</h4>
 
 <div align="center">
 
