@@ -3,7 +3,7 @@
 # Marco-Voice: Unified Framework for Expressive Speech Synthesis with Voice Cloning
 > **Voice Cloning · Emotion Control**
 <div align="center">
-  <img src="assets/marco-voice-logo-2.png" alt="Marco-Voice Ecosystem" width="300">
+  <img src="assets/marco-voice-logo-3.png" alt="Marco-Voice Ecosystem" width="300">
   <p>Empowering Natural Human-Computer Interaction through Expressive Speech Synthesis</p>
 </div>
 
@@ -21,7 +21,7 @@
 This paper presents a multifunctional speech synthesis system that integrates voice cloning, emotion control, and cross-lingual synthesis within a unified framework. The goal of this work is to address longstanding challenges in achieving highly expressive, controllable, and natural speech generation that faithfully preserves speaker identity across diverse linguistic and emotional contexts.
 
 <div align="center">
-<img src="assets/marco_vocie_fig_v2.png" alt="System Architecture" width="800">
+<img src="assets/marco_vocie_fig_v3.png" alt="System Architecture" width="800">
 </div>
 
 Our approach introduces an effective speaker-emotion disentanglement mechanism with in-batch contrastive learning, enabling independent manipulation of speaker identity and eemotional style, as well as rotational emotional embedding integration method for smooth emotion control. To support comprehensive training and evaluation, we construct CSEMOTIONS, a high-quality emotional speech dataset containing 10 hours of Mandarin speech from six professional speakers across seven emotional categories. Extensive experiments demonstrate that our system, Marco-Voice, achieves substantial improvements in both objective and subjective metrics. Comprehensive evaluations and analysis were conducted, results show that Marco-Voice delivers competitive performance in terms of speech clarity and emotional richness, representing a substantial advance in the field of expressive neural speech synthesis.
