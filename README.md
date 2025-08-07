@@ -2,13 +2,10 @@
   <img src="assets/marco-voice-logo-3.png" alt="Marco-Voice Ecosystem" width="200">
 </p>
 
-
-<div align="center">
 # 🎧Marco-Voice🤗: A Unified Framework for Expressive Speech Synthesis with Voice Cloning
 
-> **Voice Cloning  · Emotion Control 😄**
-<p>Empowering Natural Human-Computer Interaction through Expressive Speech Synthesis</p>
 
+<div align="center">
 
 [![Paper](https://img.shields.io/badge/Paper-PDF-%23B31B1B)](https://arxiv.org/abs/2508.02038)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
@@ -19,7 +16,22 @@
 
 </div>
 
+<div align="center">
+
+<!-- **Affiliations:** -->
+
+⭐ _**MarcoPolo Team**_ ⭐
+
+[_**Alibaba International Digital Commerce**_](https://aidc-ai.com)
+
+:octocat: [**Github**](https://github.com/AIDC-AI/Marco-o1)  🤗  [**Hugging Face**](https://huggingface.co/AIDC-AI/Marco-o1) 📝  [**Paper**](https://arxiv.org/abs/2411.14405) 🧑‍💻 [**Model**](https://huggingface.co/AIDC-AI/Marco-o1) 🗂️  [**Data**](https://github.com/AIDC-AI/Marco-o1/tree/main/data) 📽️  [**Demo**](https://huggingface.co/AIDC-AI/Marco-o1)
+
+</div>
+
 ## 📖 Overview
+
+> **Voice Cloning  · Emotion Control 😄**
+<p>Empowering Natural Human-Computer Interaction through Expressive Speech Synthesis</p>
 
 This paper presents a multifunctional speech synthesis system that integrates voice cloning, emotion control, and cross-lingual synthesis within a unified framework. The goal of this work is to address longstanding challenges in achieving highly expressive, controllable, and natural speech generation that faithfully preserves speaker identity across diverse linguistic and emotional contexts.
 
