@@ -7,10 +7,12 @@
 
 <div align="center">
 
-[![Paper](https://img.shields.io/badge/Paper-PDF-%23B31B1B)](https://arxiv.org/abs/2508.02038)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+<!-- [![Paper](https://img.shields.io/badge/Paper-PDF-%23B31B1B)](https://arxiv.org/abs/2508.02038) -->
+<!-- [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE) -->
+<img src="https://img.shields.io/badge/License-Apache%202.0-green.svg" alt="License">
+<img src="https://img.shields.io/github/issues/AIDC-AI/Marco-Voice?color=red" alt="Issues">
 <img src="https://img.shields.io/github/stars/AIDC-AI/Marco-Voice?color=yellow" alt="Stars">
-[![HuggingFace Dataset](https://img.shields.io/badge/Dataset-HuggingFace-orange)](https://huggingface.co/datasets/AIDC-AI/CSEMOTIONS)
+<!-- [![HuggingFace Dataset](https://img.shields.io/badge/Dataset-HuggingFace-orange)](https://huggingface.co/datasets/AIDC-AI/CSEMOTIONS) -->
 ![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![PyTorch 2.0+](https://img.shields.io/badge/PyTorch-2.0%2B-red)
 
@@ -20,7 +22,7 @@
 
 <!-- **Affiliations:** -->
 
-⭐ _**MarcoPolo Team**_ ⭐
+⭐ _**AI Business**_ ⭐
 
 [_**Alibaba International Digital Commerce**_](https://aidc-ai.com)
 
