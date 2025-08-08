@@ -46,6 +46,231 @@
 
 Our approach introduces an effective speaker-emotion disentanglement mechanism with in-batch contrastive learning, enabling independent manipulation of speaker identity and eemotional style, as well as rotational emotional embedding integration method for smooth emotion control. To support comprehensive training and evaluation, we construct CSEMOTIONS, a high-quality emotional speech dataset containing 10 hours of Mandarin speech from six professional speakers across seven emotional categories. Extensive experiments demonstrate that our system, Marco-Voice, achieves substantial improvements in both objective and subjective metrics. Comprehensive evaluations and analysis were conducted, results show that Marco-Voice delivers competitive performance in terms of speech clarity and emotional richness, representing a substantial advance in the field of expressive neural speech synthesis.
 
+## Audio Samples
+
+Below are sample outputs from our TTS system demonstrating different emotional expressions, with three different speakers:
+
+### Neutral
+
+<table>
+<tr>
+<td align="center"><b>Speaker001</b></td>
+<td align="center"><b>Speaker002</b></td>
+<td align="center"><b>Speaker003</b></td>
+</tr>
+<tr>
+<td align="center">
+    
+[Speaker001_Neutral_0.webm](https://github.com/user-attachments/assets/2750293e-f6e6-4255-80ba-3c1e500f675e)
+
+</td>
+<td align="center">
+    
+[Speaker002_Neutral_0.webm](https://github.com/user-attachments/assets/5e2dc40f-922f-46f5-a8f1-3238980ccc3a)
+
+</td>
+<td align="center">
+    
+[Speaker003_Neutral_0.webm](https://github.com/user-attachments/assets/caaf9a1f-96e3-473d-af28-a935622d0fac)
+
+</td>
+</tr>
+</table>
+
+**Natural, conversational tone**
+
+---
+
+### Happy
+
+<table>
+<tr>
+<td align="center"><b>Speaker001</b></td>
+<td align="center"><b>Speaker002</b></td>
+<td align="center"><b>Speaker003</b></td>
+</tr>
+<tr>
+<td align="center">
+
+[Speaker001_Happy_0.webm](https://github.com/user-attachments/assets/64f53e6b-566e-4836-9863-349fe7a3ae88)
+
+</td>
+<td align="center">
+
+[Speaker002_Happy_0.webm](https://github.com/user-attachments/assets/0a6caeca-9aaa-491b-b719-fc9c1db7a885)
+
+</td>
+<td align="center">
+
+[Speaker003_Happy_0.webm](https://github.com/user-attachments/assets/6592d4d7-644e-4966-a06a-341d2d85ed70)
+
+</td>
+</tr>
+</table>
+
+**Cheerful and upbeat expression**
+
+---
+
+### Sad
+
+<table>
+<tr>
+<td align="center"><b>Speaker001</b></td>
+<td align="center"><b>Speaker002</b></td>
+<td align="center"><b>Speaker003</b></td>
+</tr>
+<tr>
+<td align="center">
+
+[Speaker001_Sad_0.webm](https://github.com/user-attachments/assets/5d03d07b-7131-4f95-a23d-937efe462644)
+
+</td>
+<td align="center">
+
+[Speaker002_Sad_0.webm](https://github.com/user-attachments/assets/f34e94d7-c031-4ce4-9741-07250d825bae)
+
+</td>
+<td align="center">
+
+[Speaker003_Sad_0.webm](https://github.com/user-attachments/assets/6ef30c36-09fc-4fb0-a8c4-2c9ce32d6173)
+
+</td>
+</tr>
+</table>
+
+**Melancholic and subdued tone**
+
+---
+
+### Angry
+
+<table>
+<tr>
+<td align="center"><b>Speaker001</b></td>
+<td align="center"><b>Speaker002</b></td>
+<td align="center"><b>Speaker003</b></td>
+</tr>
+<tr>
+<td align="center">
+
+[Speaker001_Angry_0.webm](https://github.com/user-attachments/assets/5c470ef2-2e75-4acd-af40-920260917d0d)
+
+</td>
+<td align="center">
+
+[Speaker002_Angry_0.webm](https://github.com/user-attachments/assets/b9385c6f-d0ac-437f-8cdb-1d16de9179f5)
+
+</td>
+<td align="center">
+
+[Speaker003_Angry_0.webm](https://github.com/user-attachments/assets/7fff8327-b0f1-457d-822c-b709910da502)
+
+</td>
+</tr>
+</table>
+
+**Intense and forceful delivery**
+
+---
+
+### Fearful
+
+<table>
+<tr>
+<td align="center"><b>Speaker001</b></td>
+<td align="center"><b>Speaker002</b></td>
+<td align="center"><b>Speaker003</b></td>
+</tr>
+<tr>
+<td align="center">
+
+[Speaker001_Fearful_0.webm](https://github.com/user-attachments/assets/4491ba91-fa4f-4414-859f-8e4115b5d0d3)
+
+</td>
+<td align="center">
+
+[Speaker002_Fearful_0.webm](https://github.com/user-attachments/assets/747c9754-a2ba-4e2f-8493-ae663949e52e)
+
+</td>
+<td align="center">
+
+[Speaker003_Fearful_0.webm](https://github.com/user-attachments/assets/f9903704-ea55-4783-9928-8cd09d6a16ad)
+
+</td>
+</tr>
+</table>
+
+**Anxious and trembling voice**
+
+---
+
+### Surprise
+
+<table>
+<tr>
+<td align="center"><b>Speaker001</b></td>
+<td align="center"><b>Speaker002</b></td>
+<td align="center"><b>Speaker003</b></td>
+</tr>
+<tr>
+<td align="center">
+
+[Speaker001_Surprise_0.webm](https://github.com/user-attachments/assets/26b69322-b4e3-455c-aedd-323b5d72319e)
+
+</td>
+<td align="center">
+
+[Speaker002_Surprise_0.webm](https://github.com/user-attachments/assets/c056780a-40a2-452c-a314-391889fd6a33)
+
+</td>
+<td align="center">
+
+[Speaker003_Surprise_0.webm](https://github.com/user-attachments/assets/4b63436f-efac-4cf1-b817-e6fbc0ec90c7)
+
+</td>
+</tr>
+</table>
+
+**Excited and astonished expression**
+
+---
+
+### Playfulness
+
+<table>
+<tr>
+<td align="center"><b>Speaker001</b></td>
+<td align="center"><b>Speaker002</b></td>
+<td align="center"><b>Speaker003</b></td>
+</tr>
+<tr>
+<td align="center">
+
+[Speaker001_Playfulness_0.webm](https://github.com/user-attachments/assets/4afae8fa-5efc-4adc-9e3c-e10c0bd873b8)
+
+</td>
+<td align="center">
+
+[Speaker002_Playfulness_0.webm](https://github.com/user-attachments/assets/82ed45b9-939c-4345-8ce1-62b92ec90c6e)
+
+</td>
+<td align="center">
+
+[Speaker003_Playfulness_0.webm](https://github.com/user-attachments/assets/793108c5-28d0-4851-a0b1-2008de4522da)
+
+</td>
+</tr>
+</table>
+
+**Playful and teasing tone**
+
+---
+
+We welcome any suggestions from the community to our project and we will continue to improve this project. 
+
+我们欢迎社区对我们的项目提出任何建议，我们将持续改进和提升这个项目。
+
 ## 📌 Main Contributions
 
 ### 1. Marco-Voice Model:
@@ -327,25 +552,7 @@ We conducted a blind human evaluation with four annotators. The Likert scale ran
 ### Gender Bias Analysis
 <img src="assets/gender_performance_comparison.png" alt="Gender Analysis" width="600">
 
-## Audio Samples
 
-Below are sample outputs from our TTS system demonstrating different emotional expressions, with three different speakers:
-
-| Emotion      | Speaker001 Sample                                                    | Speaker002 Sample                                                    | Speaker003 Sample                                                    | Description                       |
-|--------------|---------------------------------------------------------------------|---------------------------------------------------------------------|---------------------------------------------------------------------|-----------------------------------|
-| Neutral      | [Listen](assets/audios/Speaker001_Neutral_0.webm)                   | [Listen](assets/audios/Speaker002_Neutral_0.webm)                   | [Listen](assets/audios/Speaker003_Neutral_0.webm)                   | Natural, conversational tone      |
-| Happy        | [Listen](assets/audios/Speaker001_Happy_0.webm)                     | [Listen](assets/audios/Speaker002_Happy_0.webm)                     | [Listen](assets/audios/Speaker003_Happy_0.webm)                     | Cheerful and upbeat expression    |
-| Sad          | [Listen](assets/audios/Speaker001_Sad_0.webm)                       | [Listen](assets/audios/Speaker002_Sad_0.webm)                       | [Listen](assets/audios/Speaker003_Sad_0.webm)                       | Melancholic and subdued tone      |
-| Angry        | [Listen](assets/audios/Speaker001_Angry_0.webm)                     | [Listen](assets/audios/Speaker002_Angry_0.webm)                     | [Listen](assets/audios/Speaker003_Angry_0.webm)                     | Intense and forceful delivery     |
-| Fearful      | [Listen](assets/audios/Speaker001_Fearful_0.webm)                   | [Listen](assets/audios/Speaker002_Fearful_0.webm)                   | [Listen](assets/audios/Speaker003_Fearful_0.webm)                   | Anxious and trembling voice       |
-| Surprise     | [Listen](assets/audios/Speaker001_Surprise_0.webm)                  | [Listen](assets/audios/Speaker002_Surprise_0.webm)                  | [Listen](assets/audios/Speaker003_Surprise_0.webm)                  | Excited and astonished expression |
-| Playfulness  | [Listen](assets/audios/Speaker001_Playfulness_0.webm)               | [Listen](assets/audios/Speaker002_Playfulness_0.webm)               | [Listen](assets/audios/Speaker003_Playfulness_0.webm)               | Playful and teasing tone          |
-
-## Comments
-
-We welcome any suggestions from the community to our project and we will continue to improve this project. 
-
-我们欢迎社区对我们的项目提出任何建议，我们将持续改进和提升这个项目。
 
 ## 📜 Citation
 ```bibtex
