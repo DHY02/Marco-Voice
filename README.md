@@ -24,7 +24,7 @@
 
 <!-- **Affiliations:** -->
 
-<p>⭐ _**AI Business**_ ⭐</p>
+⭐ _**AI Business**_ ⭐
 
 [_**Alibaba International Digital Commerce**_](https://aidc-ai.com)
 
