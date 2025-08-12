@@ -290,7 +290,7 @@ We welcome any suggestions from the community to our project and we will continu
 | ----------------------- | -------------------------------------------------- |
 | Duration                | ~10 hours                                          |
 | Speakers                | 10 professionals (5♂, 5♀)                        |
-| Emotions                | Neutral, Happy, Angry, Sad, Surprise, Joking, Fearful |
+| Emotions                | Neutral, Happy, Angry, Sad, Surprise, Playfulness, Fearful |
 | Languages               | Mandarin                                           |
 | Sampling Rate           | 48kHz/16bits                                        |
 | Recording Environment   | Professional studio                                |
