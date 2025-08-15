@@ -30,7 +30,7 @@ def generate_kaldi_files(input_dir, output_dir):
                 transcript = f.read().strip() 
 
             utt_id = base_name
-            spk_id = base_name.split("_")[0]  
+            spk_id = base_name.split("_")[1]  
 
             wav_scp.append(f"{utt_id} {wav_file}")
             utt2spk.append(f"{utt_id} {spk_id}")

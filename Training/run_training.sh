@@ -1,20 +1,21 @@
 # 
 
 #!/bin/bash
-cd Marco-Voice/Models/marco_voice/
+cd Models/marco_voice/
 
 . ./path.sh || exit 1;
 
 # Set paths for your custom data and pretrained models
-custom_data_dir=$data_path   # directory containing train, dev, test splits
+custom_data_dir=/tsdata2/dhy/tts/Marco-Voice/data  # directory containing train, dev, test splits
 processed_data_dir=${custom_data_dir}/processed  # processed data will be saved here
-pretrained_model_dir=pretrained_models/CosyVoice-300M
-trained_model_dir=../../../trained_models/CosyVoice-300M-KO 
-cp ${custom_data_dir}/* ${processed_data_dir}/
+pretrained_model_dir=/tsdata2/dhy/tts/CosyVoice/pretrained_models/CosyVoice-300M
+trained_model_dir=/tsdata2/dhy/tts/CosyVoice/trained_models/CosyVoice-300M-KO 
+# cp  ${custom_data_dir}/* ${processed_data_dir}/
+
 # Define the stages you want to run.
 # For custom data, you can skip the download stage.
-stage=4
-stop_stage=5
+stage=5
+stop_stage=7
 # if [ ${stage} -le 0 ] && [ ${stop_stage} -ge 0 ]; then
 #   echo "Custom Data Preparation: Creating wav.scp, text, utt2spk, spk2utt files"
 #   for split in train; do
@@ -28,16 +29,17 @@ stop_stage=5
 if [ ${stage} -le 1 ] && [ ${stop_stage} -ge 1 ]; then
   echo "Extract CampPlus Speaker Embeddings for Custom Data"
   for split in train; do
-    tools/extract_embedding_rodis.py --dir ${processed_data_dir}/ \
-      --onnx_path $pretrained_model_dir/campplus.onnx
+    python tools/extract_embedding_rodis.py --dir ${processed_data_dir}/ \
+      --onnx_path $pretrained_model_dir/campplus.onnx \
+      --num_thread 4 || exit 1;
   done
 fi
 
 if [ ${stage} -le 2 ] && [ ${stop_stage} -ge 2 ]; then
   echo "Extract Discrete Speech Tokens for Custom Data"
   for split in train; do
-    tools/extract_speech_token.py --dir ${processed_data_dir}/ \
-      --onnx_path $pretrained_model_dir/speech_tokenizer_v1.onnx
+    python tools/extract_speech_token.py --dir ${processed_data_dir}/ \
+      --onnx_path $pretrained_model_dir/speech_tokenizer_v1.onnx || exit 1;
   done
 fi
 
@@ -48,10 +50,10 @@ if [ ${stage} -le 3 ] && [ ${stop_stage} -ge 3 ]; then
     mkdir -p ${processed_data_dir}/$split/parquet
     # cp ${processed_data_dir}/* ${processed_data_dir}/$split
     # cp ${processed_data_dir}/* ${processed_data_dir}/$split/parquet
-    tools/make_parquet_list_rodis.py --num_utts_per_parquet 1000 \
+    python tools/make_parquet_list_rodis.py --num_utts_per_parquet 1000 \
       --num_processes 10 \
       --src_dir ${processed_data_dir}/$split \
-      --des_dir ${processed_data_dir}/$split/parquet
+      --des_dir ${processed_data_dir}/$split/parquet || exit 1;
   done
 fi
 
@@ -71,7 +73,7 @@ fi
 #   done
 # fi
 
-export CUDA_VISIBLE_DEVICES="2"
+export CUDA_VISIBLE_DEVICES="0,1,2,3,4,5,6,7,8,9"
 num_gpus=$(echo $CUDA_VISIBLE_DEVICES | awk -F "," '{print NF}')
 job_id=1986
 dist_backend="nccl"
@@ -81,7 +83,7 @@ train_engine=torch_ddp
 if [ ${stage} -le 5 ] && [ ${stop_stage} -ge 5 ]; then
   echo "Training on Normal Data"
   cat ${processed_data_dir}/train/parquet/data.list > ${processed_data_dir}/train.data.list
-  for model in flow ; do
+  for model in llm ; do
     torchrun --nnodes=1 --nproc_per_node=$num_gpus \
         --rdzv_id=$job_id --rdzv_backend="c10d" --rdzv_endpoint="localhost:1232" \
       cosyvoice_rodis/bin/train.py \
@@ -99,25 +101,25 @@ if [ ${stage} -le 5 ] && [ ${stop_stage} -ge 5 ]; then
       --pin_memory \
       --use_amp \
       --deepspeed_config ./conf/ds_stage2.json \
-      --deepspeed.save_states model+optimizer
+      --deepspeed.save_states model+optimizer || exit 1;
   done
 fi
 
 average_num=3
 if [ ${stage} -le 6 ] && [ ${stop_stage} -ge 6 ]; then
   for model in llm; do
-    decode_checkpoint=pretrained_models/ko_224h/${model}.pt
+    decode_checkpoint=${trained_model_dir}/${model}.pt
     echo "Averaging Checkpoints for $model; final checkpoint: $decode_checkpoint"
-    python cosyvoice/bin/average_model.py \
+    python cosyvoice_rodis/bin/average_model.py \
       --dst_model $decode_checkpoint \
-      --src_path exp/cosyvoice/llm/CosyVoice-300M-KO_224/torch_ddp  \
+      --src_path exp/cosyvoice/${model}/CosyVoice-300M-KO_224h/torch_ddp  \
       --num ${average_num} \
-      --val_best
+      --val_best || exit 1;
   done
 fi
 
 if [ ${stage} -le 7 ] && [ ${stop_stage} -ge 7 ]; then
   echo "Exporting Model for Inference"
-  python cosyvoice/bin/export_jit.py --model_dir $trained_model_dir
-  python cosyvoice/bin/export_onnx.py --model_dir $trained_model_dir
+  python cosyvoice_rodis/bin/export_jit.py --model_dir $trained_model_dir
+  python cosyvoice_rodis/bin/export_onnx.py --model_dir $trained_model_dir
 fi

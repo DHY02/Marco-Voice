@@ -45,11 +45,13 @@ def main():
     val_scores = []
     if args.val_best:
         yamls = glob.glob('{}/*.yaml'.format(args.src_path))
+        print(f"src_path: {args.src_path}")
         yamls = [
             f for f in yamls
             if not (os.path.basename(f).startswith('train')
                     or os.path.basename(f).startswith('init'))
         ]
+        print(f"len of yaml: {len(yamls)}")
         for y in yamls:
             with open(y, 'r') as f:
                 dic_yaml = yaml.load(f, Loader=yaml.BaseLoader)
