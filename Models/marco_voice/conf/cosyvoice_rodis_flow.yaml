@@ -203,8 +203,8 @@ shuffle: !name:cosyvoice_rodis.dataset.processor.shuffle
 sort: !name:cosyvoice_rodis.dataset.processor.sort
     sort_size: 500  # sort_size should be less than shuffle_size
 batch: !name:cosyvoice_rodis.dataset.processor.batch
-    batch_type: 'static'
-    max_frames_in_batch: 250 # change to 1400 in gan train on v100 16g
+    batch_type: 'dynamic'
+    max_frames_in_batch: 10000 # change to 1400 in gan train on v100 16g
 padding: !name:cosyvoice_rodis.dataset.processor.padding
     use_spk_embedding: False # change to True during sft
 
@@ -240,13 +240,13 @@ data_pipeline_gan: [
 train_conf:
     optim: adam
     optim_conf:
-        lr: 1e-5 # 0.001 # change to 1e-5 during sft
+        lr: 1e-4 # 0.001 # change to 1e-5 during sft
     scheduler: constantlr # warmuplr # change to constantlr during sft
     scheduler_conf:
         warmup_steps: 2500
-    max_epoch: 10
+    max_epoch: 20
     grad_clip: 5
-    accum_grad: 200
+    accum_grad: 32
     log_interval: 100
     save_per_step: -1
 

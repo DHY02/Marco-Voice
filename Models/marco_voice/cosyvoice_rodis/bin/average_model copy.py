@@ -1,3 +1,5 @@
+# 
+
 # Copyright (c) 2020 Mobvoi Inc (Di Wu)
 # Copyright (c) 2024 Alibaba Inc (authors: Xiang Lyu)
 #
@@ -30,7 +32,7 @@ def get_args():
                         action="store_true",
                         help='averaged model')
     parser.add_argument('--num',
-                        default=3,  # 改为3
+                        default=5,
                         type=int,
                         help='nums for averaged model')
 
@@ -58,29 +60,19 @@ def main():
                 step = int(dic_yaml['step'])
                 tag = dic_yaml['tag']
                 val_scores += [[epoch, step, loss, tag]]
-        
-        # 按epoch降序排序，获取最新的3个epoch
-        sorted_by_epoch = sorted(val_scores, key=lambda x: x[0], reverse=True)
-        selected_scores = sorted_by_epoch[:3]  # 取最后3个epoch
-        
-        print("Selected last 3 epochs for averaging (epoch, step, loss, tag) = " + 
-              str(selected_scores))
-        
+        sorted_val_scores = sorted(val_scores,
+                                   key=lambda x: x[2],
+                                   reverse=False)
+        print("best val (epoch, step, loss, tag) = " +
+              str(sorted_val_scores[:args.num]))
         path_list = [
             args.src_path + '/epoch_{}_whole.pt'.format(score[0])
-            for score in selected_scores
+            for score in sorted_val_scores[:args.num]
         ]
-    else:
-        # 如果没有使用val_best，则需要其他逻辑来获取path_list
-        # 这里假设直接按文件名获取最后3个epoch的模型
-        model_files = glob.glob('{}/*_whole.pt'.format(args.src_path))
-        model_files.sort()  # 按文件名排序
-        path_list = model_files[-3:]  # 取最后3个
-        
-    print("Models to average:", path_list)
+    print(path_list)
     avg = {}
-    num = len(path_list)  # 使用实际的文件数量
-    
+    num = args.num
+    assert num == len(path_list)
     for path in path_list:
         print('Processing {}'.format(path))
         states = torch.load(path, map_location=torch.device('cpu'))
@@ -89,13 +81,11 @@ def main():
                 avg[k] = states[k].clone()
             else:
                 avg[k] += states[k]
-    
     # average
     for k in avg.keys():
         if avg[k] is not None:
             # pytorch 1.6 use true_divide instead of /=
             avg[k] = torch.true_divide(avg[k], num)
-    
     print('Saving to {}'.format(args.dst_model))
     torch.save(avg, args.dst_model)
 

@@ -1,0 +1,1 @@
+bash Evaluation/cal_metrix.sh batch_inference_results_emo_1/metadata.json ./eval

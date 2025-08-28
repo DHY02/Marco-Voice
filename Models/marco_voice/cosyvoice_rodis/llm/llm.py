@@ -234,7 +234,7 @@ class TransformerLM(torch.nn.Module):
 
         # 3. handle emotion embedding
         if self.emotion_embedding and emotion_embedding is not None:
-            emotion_embedding = F.normalize(emotion_embedding.unsqueeze(0).to(torch.float16), dim=1)
+            emotion_embedding = F.normalize(emotion_embedding.unsqueeze(0).float(), dim=1)
             emotion_embedding = self.spk_embed_affine_layer(emotion_embedding)
             emotion_embedding = emotion_embedding.unsqueeze(dim=1) #  * 1.5
             embedding += emotion_embedding  

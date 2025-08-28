@@ -4,10 +4,11 @@
 . ./path.sh || exit 1;
 
 # Set paths for your custom data and pretrained models
-your_data_dir=$data_path  # directory containing train, dev, test splits
-processed_data_dir=${your_data_dir}/processed  # processed data will be saved here
-pretrained_model_dir=../../../pretrained_models/CosyVoice-300M
-trained_model_dir=../../../trained_models/CosyVoice-300M-enhanced
+custom_data_dir=/root/gpufree-data/Marco-Voice/data_emosph  # directory containing train, dev, test splits
+processed_data_dir=${custom_data_dir}/processed  # processed data will be saved here
+pretrained_model_dir=/root/gpufree-data/Marco-Voice/pretrained_models/CosyVoice-300M
+trained_model_dir=/root/gpufree-data/Marco-Voice/trained_models/CosyVoice-300M-KO-emosph
+
 
 # Define the stages you want to run.
 # For custom data, you can skip the download stage.
@@ -27,7 +28,7 @@ stop_stage=6
 if [ ${stage} -le 1 ] && [ ${stop_stage} -ge 1 ]; then
   echo "Extract CampPlus Speaker Embeddings for Custom Data"
   for split in train; do
-    Marco-Voice/Models/marco_voice/tools/extract_embedding_emosphere.py --dir ${processed_data_dir}/ \
+    python Marco-Voice/Models/marco_voice/tools/extract_embedding_emosphere.py --dir ${processed_data_dir}/ \
       --onnx_path $pretrained_model_dir/campplus.onnx
   done
 fi
@@ -35,7 +36,7 @@ fi
 if [ ${stage} -le 2 ] && [ ${stop_stage} -ge 2 ]; then
   echo "Extract Discrete Speech Tokens for Custom Data"
   for split in train; do
-    Marco-Voice/Models/marco_voice/tools/extract_speech_token.py --dir ${processed_data_dir}/ \
+    python Marco-Voice/Models/marco_voice/tools/extract_speech_token.py --dir ${processed_data_dir}/ \
       --onnx_path $pretrained_model_dir/speech_tokenizer_v1.onnx
   done
 fi
@@ -44,7 +45,7 @@ if [ ${stage} -le 3 ] && [ ${stop_stage} -ge 3 ]; then
   echo "Creating Parquet Format Data for Custom Data"
   for split in train; do
     mkdir -p ${processed_data_dir}/$split/parquet
-    Marco-Voice/Models/marco_voice/tools/make_parquet_list_emosphere.py --num_utts_per_parquet 1000 \
+    python Marco-Voice/Models/marco_voice/tools/make_parquet_list_emosphere.py --num_utts_per_parquet 1000 \
       --num_processes 10 \
       --src_dir ${processed_data_dir}/$split \
       --des_dir ${processed_data_dir}/$split/parquet

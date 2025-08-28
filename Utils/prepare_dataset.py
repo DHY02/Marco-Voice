@@ -7,7 +7,10 @@ import os
 import glob
 from collections import defaultdict
 
-def prepare_esd_data(esd_root_path):
+def get_prompt_token(x):
+    return "<|endofprompt|>" if x == "2" else "<endofprompt>"
+
+def prepare_esd_data(esd_root_path, ver):
     """
     处理ESD数据集，返回数据列表
     
@@ -23,7 +26,8 @@ def prepare_esd_data(esd_root_path):
     text_lines = []
     utt2spk_lines = []
     spk2utt_dict = defaultdict(list)
-    
+    emo = {"伤心": "Sad", "恐惧":"Fearful", "快乐": "Happy", "惊喜": "Surprise", "生气": "Angry", "中立":"Neutral"} 
+
     # 遍历所有说话人目录
     speaker_dirs = sorted(glob.glob(os.path.join(esd_root_path, "*")))
     
@@ -33,7 +37,7 @@ def prepare_esd_data(esd_root_path):
             
         speaker_id = os.path.basename(speaker_dir)
         # 给ESD数据集的说话人ID添加前缀，避免与其他数据集冲突
-        speaker_id_prefixed = f"esd_{speaker_id}"
+        speaker_id_prefixed = f"esd-{speaker_id}"
         print(f"  处理说话人: {speaker_id} -> {speaker_id_prefixed}")
         
         # 读取该说话人的文本文件
@@ -49,7 +53,10 @@ def prepare_esd_data(esd_root_path):
                         if len(parts) >= 2:
                             utt_id = parts[0]
                             text_content = parts[1]
-                            utt_id_to_text[utt_id] = text_content
+                            emotion = parts[2]
+                            if emo.get(emotion):
+                                emotion = emo.get(emotion)
+                            utt_id_to_text[utt_id] = emotion + get_prompt_token(ver) + text_content
         
         # 遍历所有情感目录
         emotion_dirs = ["Angry", "Happy", "Neutral", "Sad", "Surprise"]
@@ -67,7 +74,7 @@ def prepare_esd_data(esd_root_path):
                 wav_filename = os.path.basename(wav_file)
                 original_utt_id = wav_filename.replace('.wav', '')
                 # 给音频ID添加前缀，确保唯一性
-                utt_id = f"esd_{original_utt_id}"
+                utt_id = f"esd-{original_utt_id}"
                 
                 # 获取对应的文本
                 text_content = utt_id_to_text.get(original_utt_id, "")
@@ -84,7 +91,7 @@ def prepare_esd_data(esd_root_path):
     print(f"ESD数据集处理完成: {len(wav_scp_lines)} 条音频, {len(spk2utt_dict)} 个说话人")
     return wav_scp_lines, text_lines, utt2spk_lines, spk2utt_dict
 
-def prepare_csemotions_data(csemotions_root_path):
+def prepare_csemotions_data(csemotions_root_path, ver):
     """
     处理CSEMOTIONS数据集（层次化结构），返回数据列表
     
@@ -110,7 +117,7 @@ def prepare_csemotions_data(csemotions_root_path):
             
         speaker_id = os.path.basename(speaker_dir)
         # 给CSEMOTIONS数据集的说话人ID添加前缀，避免与其他数据集冲突
-        speaker_id_prefixed = f"cse_{speaker_id}"
+        speaker_id_prefixed = f"cse-{speaker_id}"
         print(f"  处理说话人: {speaker_id} -> {speaker_id_prefixed}")
         
         # 读取该说话人的文本文件
@@ -126,13 +133,17 @@ def prepare_csemotions_data(csemotions_root_path):
                         if len(parts) >= 2:
                             utt_id = parts[0]
                             text_content = parts[1]
-                            utt_id_to_text[utt_id] = text_content
+                            emotion = parts[2]
+                            utt_id_to_text[utt_id] = emotion + get_prompt_token(ver) + text_content
         
         # 遍历所有情感目录
         emotion_dirs = [d for d in os.listdir(speaker_dir) 
                        if os.path.isdir(os.path.join(speaker_dir, d)) and d != speaker_id]
         
         for emotion in emotion_dirs:
+            if emotion == "Playfulness":
+                print(f"忽略Playfulness")
+                continue
             emotion_dir = os.path.join(speaker_dir, emotion)
             
             # 获取该情感目录下的所有wav文件
@@ -143,7 +154,7 @@ def prepare_csemotions_data(csemotions_root_path):
                 wav_filename = os.path.basename(wav_file)
                 original_utt_id = wav_filename.replace('.wav', '')
                 # 给音频ID添加前缀，确保唯一性
-                utt_id = f"cse_{original_utt_id}"
+                utt_id = f"cse-{original_utt_id}"
                 
                 # 获取对应的文本
                 text_content = utt_id_to_text.get(original_utt_id, "")
@@ -234,6 +245,8 @@ def main():
     import argparse
     
     parser = argparse.ArgumentParser(description='合并ESD和CSEMOTIONS数据集用于Marco-Voice训练')
+    parser.add_argument('--ver', 
+                        help='cosyvoice1 or 2')
     parser.add_argument('--esd_dir', 
                         help='ESD数据集根目录路径')
     parser.add_argument('--csemotions_dir', 
@@ -253,14 +266,14 @@ def main():
     
     if args.esd_dir:
         if os.path.exists(args.esd_dir):
-            esd_result = prepare_esd_data(args.esd_dir)
+            esd_result = prepare_esd_data(args.esd_dir, args.ver)
             dataset_results.append(esd_result)
         else:
             print(f"⚠️  警告: ESD数据集目录不存在: {args.esd_dir}")
     
     if args.csemotions_dir:
         if os.path.exists(args.csemotions_dir):
-            cse_result = prepare_csemotions_data(args.csemotions_dir)
+            cse_result = prepare_csemotions_data(args.csemotions_dir, args.ver)
             dataset_results.append(cse_result)
         else:
             print(f"⚠️  警告: CSEMOTIONS数据集目录不存在: {args.csemotions_dir}")
@@ -270,6 +283,6 @@ def main():
         merge_datasets(args.output_dir, *dataset_results)
     else:
         print("❌ 错误: 没有找到可用的数据集")
-
+    print(f"当前prompt 格式适合cosyvocie{args.ver}")
 if __name__ == "__main__":
     main()

@@ -14,6 +14,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+# Rotational Emotion Embedding Integration by SV model
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import onnxruntime
@@ -47,10 +48,11 @@ def main(args):
         if spk not in spk2embedding:
             spk2embedding[spk] = []
         spk2embedding[spk].append(embedding)
+    # mean spk_embedding
     for k, v in spk2embedding.items():
         spk2embedding[k] = torch.tensor(v).mean(dim=0).tolist()
 
-    emotion_list = ["Angry", "Surprise", "Sad", "Happy"]
+    emotion_list = ["Angry", "Surprise", "Sad", "Happy", "Disgusted", "Fearful"]
     utt2emo_dic = {}
     utt2neutral_dic = {}
     utt2embedding_dic = {}
@@ -75,6 +77,7 @@ def main(args):
         #     utt2embedding_finale[k] = v
         # else:
         k_prefix = k.split("_")[0]
+        # neutral utt of the same spk as k
         candidates = [utt for utt in utt2neutral_dic.keys() if utt.split("_")[0] == k_prefix]
 
         if candidates:
@@ -94,7 +97,8 @@ def main(args):
                 emotion_type = utt2emo_dic[k]
                 if speaker not in speaker_emotion_dic or emotion_type not in speaker_emotion_dic[speaker]:
                     continue
-
+                
+                # all the embs of this emotion
                 emotion_list = speaker_emotion_dic[speaker][emotion_type]
                 if not emotion_list:
                     continue
@@ -124,7 +128,9 @@ def main(args):
 
     # utt2embedding_finale = {k: np.array(v) for k, v in utt2embedding_finale.items()}
     # spk2embedding = {k: np.array(v) for k, v in spk2embedding.items()}
+    # spk emb of the utt
     torch.save(utt2embedding, "{}/utt2embedding.pt".format(args.dir))
+    # list of spk emb
     torch.save(spk2embedding, "{}/spk2embedding.pt".format(args.dir))
     torch.save(emo2embedding, "{}/utt2emotion_embedding.pt".format(args.dir))
     torch.save(emotion_vector_dic, "{}/embedding_info.pt".format(args.dir))

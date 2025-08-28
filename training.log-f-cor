@@ -1,0 +1,217 @@
+Training on Normal Data
+[2025-08-23 15:55:40,875] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/diffusers/models/lora.py:393: FutureWarning: `LoRACompatibleLinear` is deprecated and will be removed in version 1.0.0. Use of `LoRACompatibleLinear` is deprecated. Please switch to PEFT backend by installing PEFT: `pip install peft`.
+  deprecate("LoRACompatibleLinear", "1.0.0", deprecation_message)
+2025-08-23 15:55:45,226 INFO input frame rate=50
+/root/gpufree-data/Marco-Voice/Models/marco_voice/cosyvoice_rodis/dataset/processor.py:26: UserWarning: torchaudio._backend.set_audio_backend has been deprecated. With dispatcher enabled, this function is no-op. You can remove the function call.
+  torchaudio.set_audio_backend('soundfile')
+2025-08-23 15:55:45,482 INFO training on multiple gpus, this gpu 0, rank 0, world_size 1
+2025-08-23 15:55:47,323 INFO [Rank 0] Checkpoint: save to checkpoint /root/gpufree-data/Marco-Voice/Models/marco_voice/exp/cosyvoice/flow/CosyVoice-300M-emo-1/torch_ddp/init.pt
+2025-08-23 15:55:47,356 INFO Epoch 0 TRAIN info lr 0.0001 rank 0
+2025-08-23 15:55:47,356 INFO using accumulate grad, new batch size is 32 times larger than before
+[rank0]:[W reducer.cpp:1389] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+2025-08-23 15:56:44,552 DEBUG TRAIN Batch 0/100 loss 0.177779 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 15:57:12,650 DEBUG TRAIN Batch 0/200 loss 0.218260 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 15:57:35,793 DEBUG TRAIN Batch 0/300 loss 0.074414 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 15:58:00,546 DEBUG TRAIN Batch 0/400 loss 0.040439 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 15:58:26,973 DEBUG TRAIN Batch 0/500 loss 0.023739 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 15:58:50,210 DEBUG TRAIN Batch 0/600 loss 0.135294 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 15:59:11,564 DEBUG TRAIN Batch 0/700 loss 0.038078 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 15:59:37,210 DEBUG TRAIN Batch 0/800 loss 0.026363 lr 0.00010000 grad_norm 5.840553 rank 0
+2025-08-23 16:00:00,389 DEBUG TRAIN Batch 0/900 loss 0.050060 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:00:20,450 DEBUG TRAIN Batch 0/1000 loss 0.078063 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:00:40,020 DEBUG TRAIN Batch 0/1100 loss 0.082208 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:01:04,000 DEBUG TRAIN Batch 0/1200 loss 0.055753 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:01:19,903 INFO Skip valid
+2025-08-23 16:01:20,638 INFO [Rank 0] Checkpoint: save to checkpoint /root/gpufree-data/Marco-Voice/Models/marco_voice/exp/cosyvoice/flow/CosyVoice-300M-emo-1/torch_ddp/epoch_0_whole.pt
+2025-08-23 16:01:20,655 INFO Epoch 1 TRAIN info lr 0.0001 rank 0
+2025-08-23 16:01:20,656 INFO using accumulate grad, new batch size is 32 times larger than before
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+2025-08-23 16:02:11,617 DEBUG TRAIN Batch 1/100 loss 0.036043 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:02:36,105 DEBUG TRAIN Batch 1/200 loss 0.044902 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:03:02,642 DEBUG TRAIN Batch 1/300 loss 0.029588 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:03:25,092 DEBUG TRAIN Batch 1/400 loss 0.052986 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:03:48,026 DEBUG TRAIN Batch 1/500 loss 0.069169 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:04:11,837 DEBUG TRAIN Batch 1/600 loss 0.054354 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:04:52,138 DEBUG TRAIN Batch 1/700 loss 0.044617 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:05:17,247 DEBUG TRAIN Batch 1/800 loss 0.036712 lr 0.00010000 grad_norm 3.736382 rank 0
+2025-08-23 16:05:42,904 DEBUG TRAIN Batch 1/900 loss 0.042308 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:06:03,557 DEBUG TRAIN Batch 1/1000 loss 0.061738 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:06:24,716 DEBUG TRAIN Batch 1/1100 loss 0.032296 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:06:44,204 DEBUG TRAIN Batch 1/1200 loss 0.034386 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:06:58,024 INFO Skip valid
+2025-08-23 16:06:58,747 INFO [Rank 0] Checkpoint: save to checkpoint /root/gpufree-data/Marco-Voice/Models/marco_voice/exp/cosyvoice/flow/CosyVoice-300M-emo-1/torch_ddp/epoch_1_whole.pt
+2025-08-23 16:06:58,762 INFO Epoch 2 TRAIN info lr 0.0001 rank 0
+2025-08-23 16:06:58,762 INFO using accumulate grad, new batch size is 32 times larger than before
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+2025-08-23 16:07:37,546 DEBUG TRAIN Batch 2/100 loss 0.031902 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:08:14,476 DEBUG TRAIN Batch 2/200 loss 0.037060 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:08:40,185 DEBUG TRAIN Batch 2/300 loss 0.026921 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:09:03,161 DEBUG TRAIN Batch 2/400 loss 0.032403 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:09:34,210 DEBUG TRAIN Batch 2/500 loss 0.024170 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:10:00,424 DEBUG TRAIN Batch 2/600 loss 0.027332 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:10:22,339 DEBUG TRAIN Batch 2/700 loss 0.026501 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:10:43,516 DEBUG TRAIN Batch 2/800 loss 0.029681 lr 0.00010000 grad_norm 2.478676 rank 0
+2025-08-23 16:11:04,366 DEBUG TRAIN Batch 2/900 loss 0.027053 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:11:32,045 DEBUG TRAIN Batch 2/1000 loss 0.022378 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:11:58,380 DEBUG TRAIN Batch 2/1100 loss 0.034142 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:12:21,817 DEBUG TRAIN Batch 2/1200 loss 0.022004 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:12:37,926 INFO Skip valid
+2025-08-23 16:12:38,429 INFO [Rank 0] Checkpoint: save to checkpoint /root/gpufree-data/Marco-Voice/Models/marco_voice/exp/cosyvoice/flow/CosyVoice-300M-emo-1/torch_ddp/epoch_2_whole.pt
+2025-08-23 16:12:38,447 INFO Epoch 3 TRAIN info lr 0.0001 rank 0
+2025-08-23 16:12:38,448 INFO using accumulate grad, new batch size is 32 times larger than before
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+2025-08-23 16:13:25,759 DEBUG TRAIN Batch 3/100 loss 0.020051 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:13:51,778 DEBUG TRAIN Batch 3/200 loss 0.035112 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:14:23,017 DEBUG TRAIN Batch 3/300 loss 0.026790 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:14:52,931 DEBUG TRAIN Batch 3/400 loss 0.026938 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:15:20,982 DEBUG TRAIN Batch 3/500 loss 0.024757 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:15:42,930 DEBUG TRAIN Batch 3/600 loss 0.025920 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:16:04,866 DEBUG TRAIN Batch 3/700 loss 0.033505 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:16:26,980 DEBUG TRAIN Batch 3/800 loss 0.032163 lr 0.00010000 grad_norm 1.820162 rank 0
+2025-08-23 16:16:48,677 DEBUG TRAIN Batch 3/900 loss 0.027520 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:17:09,852 DEBUG TRAIN Batch 3/1000 loss 0.017387 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:17:34,604 DEBUG TRAIN Batch 3/1100 loss 0.027727 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:18:02,336 DEBUG TRAIN Batch 3/1200 loss 0.029804 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:18:16,680 INFO Skip valid
+2025-08-23 16:18:17,173 INFO [Rank 0] Checkpoint: save to checkpoint /root/gpufree-data/Marco-Voice/Models/marco_voice/exp/cosyvoice/flow/CosyVoice-300M-emo-1/torch_ddp/epoch_3_whole.pt
+2025-08-23 16:18:17,186 INFO Epoch 4 TRAIN info lr 0.0001 rank 0
+2025-08-23 16:18:17,186 INFO using accumulate grad, new batch size is 32 times larger than before
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+2025-08-23 16:18:55,119 DEBUG TRAIN Batch 4/100 loss 0.023218 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:19:35,723 DEBUG TRAIN Batch 4/200 loss 0.029345 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:20:01,569 DEBUG TRAIN Batch 4/300 loss 0.031053 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:20:23,676 DEBUG TRAIN Batch 4/400 loss 0.024929 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:20:54,653 DEBUG TRAIN Batch 4/500 loss 0.024229 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:21:19,035 DEBUG TRAIN Batch 4/600 loss 0.024711 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:21:40,027 DEBUG TRAIN Batch 4/700 loss 0.023573 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:22:05,290 DEBUG TRAIN Batch 4/800 loss 0.027041 lr 0.00010000 grad_norm 1.107799 rank 0
+2025-08-23 16:22:30,941 DEBUG TRAIN Batch 4/900 loss 0.020423 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:22:54,434 DEBUG TRAIN Batch 4/1000 loss 0.024288 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:23:22,248 DEBUG TRAIN Batch 4/1100 loss 0.030405 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:23:48,108 DEBUG TRAIN Batch 4/1200 loss 0.032549 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:24:03,921 INFO Skip valid
+2025-08-23 16:24:04,405 INFO [Rank 0] Checkpoint: save to checkpoint /root/gpufree-data/Marco-Voice/Models/marco_voice/exp/cosyvoice/flow/CosyVoice-300M-emo-1/torch_ddp/epoch_4_whole.pt
+2025-08-23 16:24:04,424 INFO Epoch 5 TRAIN info lr 0.0001 rank 0
+2025-08-23 16:24:04,424 INFO using accumulate grad, new batch size is 32 times larger than before
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+2025-08-23 16:24:45,483 DEBUG TRAIN Batch 5/100 loss 0.024479 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:25:09,402 DEBUG TRAIN Batch 5/200 loss 0.029124 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:25:38,905 DEBUG TRAIN Batch 5/300 loss 0.027600 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:26:14,454 DEBUG TRAIN Batch 5/400 loss 0.020685 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:26:39,637 DEBUG TRAIN Batch 5/500 loss 0.024535 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:27:02,532 DEBUG TRAIN Batch 5/600 loss 0.023953 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:27:30,017 DEBUG TRAIN Batch 5/700 loss 0.027566 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:27:56,593 DEBUG TRAIN Batch 5/800 loss 0.027843 lr 0.00010000 grad_norm 1.490308 rank 0
+2025-08-23 16:28:18,954 DEBUG TRAIN Batch 5/900 loss 0.022760 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:28:50,038 DEBUG TRAIN Batch 5/1000 loss 0.036345 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:29:19,416 DEBUG TRAIN Batch 5/1100 loss 0.022130 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:29:48,499 DEBUG TRAIN Batch 5/1200 loss 0.027504 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:30:02,415 INFO Skip valid
+2025-08-23 16:30:02,917 INFO [Rank 0] Checkpoint: save to checkpoint /root/gpufree-data/Marco-Voice/Models/marco_voice/exp/cosyvoice/flow/CosyVoice-300M-emo-1/torch_ddp/epoch_5_whole.pt
+2025-08-23 16:30:02,938 INFO Epoch 6 TRAIN info lr 0.0001 rank 0
+2025-08-23 16:30:02,938 INFO using accumulate grad, new batch size is 32 times larger than before
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+2025-08-23 16:30:42,554 DEBUG TRAIN Batch 6/100 loss 0.024217 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:31:09,402 DEBUG TRAIN Batch 6/200 loss 0.024624 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:31:47,276 DEBUG TRAIN Batch 6/300 loss 0.027274 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:32:13,888 DEBUG TRAIN Batch 6/400 loss 0.033547 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:32:42,859 DEBUG TRAIN Batch 6/500 loss 0.021304 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:33:07,176 DEBUG TRAIN Batch 6/600 loss 0.029687 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:33:28,922 DEBUG TRAIN Batch 6/700 loss 0.021525 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:33:49,964 DEBUG TRAIN Batch 6/800 loss 0.025960 lr 0.00010000 grad_norm 1.363044 rank 0
+2025-08-23 16:34:12,548 DEBUG TRAIN Batch 6/900 loss 0.025221 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:34:43,754 DEBUG TRAIN Batch 6/1000 loss 0.038400 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:35:15,198 DEBUG TRAIN Batch 6/1100 loss 0.049548 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:35:40,259 DEBUG TRAIN Batch 6/1200 loss 0.023190 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:35:55,434 INFO Skip valid
+2025-08-23 16:35:55,907 INFO [Rank 0] Checkpoint: save to checkpoint /root/gpufree-data/Marco-Voice/Models/marco_voice/exp/cosyvoice/flow/CosyVoice-300M-emo-1/torch_ddp/epoch_6_whole.pt
+2025-08-23 16:35:55,922 INFO Epoch 7 TRAIN info lr 0.0001 rank 0
+2025-08-23 16:35:55,922 INFO using accumulate grad, new batch size is 32 times larger than before
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+2025-08-23 16:36:40,603 DEBUG TRAIN Batch 7/100 loss 0.022406 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:37:03,495 DEBUG TRAIN Batch 7/200 loss 0.023738 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:37:45,212 DEBUG TRAIN Batch 7/300 loss 0.024107 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:38:13,211 DEBUG TRAIN Batch 7/400 loss 0.018810 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:38:37,474 DEBUG TRAIN Batch 7/500 loss 0.024269 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:38:59,439 DEBUG TRAIN Batch 7/600 loss 0.026355 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:39:23,365 DEBUG TRAIN Batch 7/700 loss 0.033243 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:39:50,410 DEBUG TRAIN Batch 7/800 loss 0.020239 lr 0.00010000 grad_norm 0.925514 rank 0
+2025-08-23 16:40:21,874 DEBUG TRAIN Batch 7/900 loss 0.024123 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:40:49,830 DEBUG TRAIN Batch 7/1000 loss 0.024904 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:41:11,421 DEBUG TRAIN Batch 7/1100 loss 0.021672 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:41:36,560 DEBUG TRAIN Batch 7/1200 loss 0.017188 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:41:56,720 INFO Skip valid
+2025-08-23 16:41:57,200 INFO [Rank 0] Checkpoint: save to checkpoint /root/gpufree-data/Marco-Voice/Models/marco_voice/exp/cosyvoice/flow/CosyVoice-300M-emo-1/torch_ddp/epoch_7_whole.pt
+2025-08-23 16:41:57,218 INFO Epoch 8 TRAIN info lr 0.0001 rank 0
+2025-08-23 16:41:57,218 INFO using accumulate grad, new batch size is 32 times larger than before
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+2025-08-23 16:42:52,452 DEBUG TRAIN Batch 8/100 loss 0.025354 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:43:18,933 DEBUG TRAIN Batch 8/200 loss 0.021328 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:43:41,388 DEBUG TRAIN Batch 8/300 loss 0.024905 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:44:08,638 DEBUG TRAIN Batch 8/400 loss 0.020818 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:44:34,101 DEBUG TRAIN Batch 8/500 loss 0.026577 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:44:56,485 DEBUG TRAIN Batch 8/600 loss 0.023009 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:45:18,948 DEBUG TRAIN Batch 8/700 loss 0.026506 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:45:42,678 DEBUG TRAIN Batch 8/800 loss 0.020446 lr 0.00010000 grad_norm 0.561951 rank 0
+2025-08-23 16:46:10,443 DEBUG TRAIN Batch 8/900 loss 0.023790 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:46:40,374 DEBUG TRAIN Batch 8/1000 loss 0.025340 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:47:06,500 DEBUG TRAIN Batch 8/1100 loss 0.023805 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:47:29,181 DEBUG TRAIN Batch 8/1200 loss 0.025449 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:47:43,743 INFO Skip valid
+2025-08-23 16:47:44,232 INFO [Rank 0] Checkpoint: save to checkpoint /root/gpufree-data/Marco-Voice/Models/marco_voice/exp/cosyvoice/flow/CosyVoice-300M-emo-1/torch_ddp/epoch_8_whole.pt
+2025-08-23 16:47:44,251 INFO Epoch 9 TRAIN info lr 0.0001 rank 0
+2025-08-23 16:47:44,251 INFO using accumulate grad, new batch size is 32 times larger than before
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+2025-08-23 16:48:32,600 DEBUG TRAIN Batch 9/100 loss 0.019531 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:49:00,318 DEBUG TRAIN Batch 9/200 loss 0.022252 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:49:22,399 DEBUG TRAIN Batch 9/300 loss 0.020108 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:49:47,586 DEBUG TRAIN Batch 9/400 loss 0.017035 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:50:12,710 DEBUG TRAIN Batch 9/500 loss 0.022576 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:50:36,988 DEBUG TRAIN Batch 9/600 loss 0.023318 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:51:03,519 DEBUG TRAIN Batch 9/700 loss 0.020531 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:51:47,237 DEBUG TRAIN Batch 9/800 loss 0.020959 lr 0.00010000 grad_norm 0.536239 rank 0
+2025-08-23 16:52:23,893 DEBUG TRAIN Batch 9/900 loss 0.018571 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:52:48,133 DEBUG TRAIN Batch 9/1000 loss 0.021989 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:53:09,664 DEBUG TRAIN Batch 9/1100 loss 0.024031 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:53:39,854 DEBUG TRAIN Batch 9/1200 loss 0.016221 lr 0.00010000 grad_norm 0.000000 rank 0
+2025-08-23 16:53:56,017 INFO Skip valid
+2025-08-23 16:53:56,505 INFO [Rank 0] Checkpoint: save to checkpoint /root/gpufree-data/Marco-Voice/Models/marco_voice/exp/cosyvoice/flow/CosyVoice-300M-emo-1/torch_ddp/epoch_9_whole.pt
+2025-08-23 16:53:56,543 DEBUG Attempting to acquire lock 140130480926400 on /root/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+2025-08-23 16:53:56,543 DEBUG Lock 140130480926400 acquired on /root/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+2025-08-23 16:53:56,544 DEBUG Attempting to release lock 140130480926400 on /root/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+2025-08-23 16:53:56,544 DEBUG Lock 140130480926400 released on /root/.triton/autotune/Fp16Matmul_2d_kernel.pickle.lock
+2025-08-23 16:53:56,549 DEBUG Attempting to acquire lock 140130480928560 on /root/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+2025-08-23 16:53:56,550 DEBUG Lock 140130480928560 acquired on /root/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+2025-08-23 16:53:56,550 DEBUG Attempting to release lock 140130480928560 on /root/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock
+2025-08-23 16:53:56,550 DEBUG Lock 140130480928560 released on /root/.triton/autotune/Fp16Matmul_4d_kernel.pickle.lock

@@ -151,7 +151,7 @@ class MaskedDiffWithXvec(torch.nn.Module):
         token_len1, token_len2 = prompt_token.shape[1], token.shape[1]
         token, token_len = torch.concat([prompt_token, token], dim=1), prompt_token_len + token_len
         mask = (~make_pad_mask(token_len)).unsqueeze(-1).to(embedding)
-        token = self.input_embedding(torch.clamp(token, min=0)) * mask
+        token = self.input_embedding(torch.clamp(token, min=0).long()) * mask
 
         # text encode
         h, h_lengths = self.encoder(token, token_len)

@@ -114,6 +114,7 @@ fi
 
 if [ ${stage} -le 7 ] && [ ${stop_stage} -ge 7 ]; then
   echo "Exporting Model for Inference"
+  mkdir -p $trained_model_dir
   python cosyvoice_rodis/bin/export_jit.py --model_dir $trained_model_dir
   python cosyvoice_rodis/bin/export_onnx.py --model_dir $trained_model_dir
 fi

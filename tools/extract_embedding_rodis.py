@@ -65,6 +65,8 @@ def main(args):
         # if k in utt2neutral_dic:
         #     utt2embedding_finale[k] = v
         # else:
+
+        # 找到所有相同说话人的中性句子
         k_prefix = k.split("_")[0]
         candidates = [utt for utt in utt2neutral_dic.keys() if utt.split("_")[0] == k_prefix]
 
@@ -85,7 +87,8 @@ def main(args):
                 emotion_type = utt2emo_dic[k]
                 if speaker not in speaker_emotion_dic or emotion_type not in speaker_emotion_dic[speaker]:
                     continue
-
+                
+                # 找到所有该说话人的当前情感的emotion emb
                 emotion_list = speaker_emotion_dic[speaker][emotion_type]
                 if not emotion_list:
                     continue
@@ -117,6 +120,7 @@ def main(args):
     # spk2embedding = {k: np.array(v) for k, v in spk2embedding.items()}
     torch.save(utt2embedding, "{}/utt2embedding.pt".format(args.dir))
     torch.save(spk2embedding, "{}/spk2embedding.pt".format(args.dir))
+    # utt2emo_vector
     torch.save(emo2embedding, "{}/utt2emotion_embedding.pt".format(args.dir))
     torch.save(emotion_vector_dic, "{}/embedding_info.pt".format(args.dir))
 

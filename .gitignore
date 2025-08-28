@@ -43,3 +43,13 @@ Evaluation/seed-tts-eval/thirdparty/
 *.ckpt
 *.model
 EOF
+
+downloads/
+data/
+data_2/
+batch_inference_*
+asvpesd/
+Models/marco_voice/outputs/*
+trained_models/*
+pretrained_models/*
+processed/

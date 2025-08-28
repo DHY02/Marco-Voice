@@ -1,0 +1,369 @@
+Training on Normal Data
+[2025-08-17 18:34:02,686] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.3
+[93m [WARNING] [0m using untested triton version (2.3.0), only 1.0.0 is known to be compatible
+/root/gpufree-data/Marco-Voice/Models/marco_voice/cosyvoice_rodis/dataset/processor.py:26: UserWarning: torchaudio._backend.set_audio_backend has been deprecated. With dispatcher enabled, this function is no-op. You can remove the function call.
+  torchaudio.set_audio_backend('soundfile')
+2025-08-17 18:34:07,216 INFO training on multiple gpus, this gpu 0, rank 0, world_size 1
+2025-08-17 18:34:10,583 INFO [Rank 0] Checkpoint: save to checkpoint /root/gpufree-data/Marco-Voice/Models/marco_voice/exp/cosyvoice/llm/CosyVoice-300M-KO_224h/torch_ddp/init.pt
+2025-08-17 18:34:10,600 INFO Epoch 0 TRAIN info lr 1e-05 rank 0
+2025-08-17 18:34:10,600 INFO using accumulate grad, new batch size is 32 times larger than before
+[rank0]:[W reducer.cpp:1389] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+2025-08-17 18:34:52,586 DEBUG TRAIN Batch 0/100 loss 0.102282 acc 0.314977 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:35:10,945 DEBUG TRAIN Batch 0/200 loss 0.094606 acc 0.333713 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:35:26,649 DEBUG TRAIN Batch 0/300 loss 0.105202 acc 0.322534 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:35:43,317 DEBUG TRAIN Batch 0/400 loss 0.093643 acc 0.333814 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:35:56,519 DEBUG TRAIN Batch 0/500 loss 0.109152 acc 0.303935 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:36:09,346 DEBUG TRAIN Batch 0/600 loss 0.090541 acc 0.380553 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:36:23,836 DEBUG TRAIN Batch 0/700 loss 0.090468 acc 0.338571 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:36:39,635 DEBUG TRAIN Batch 0/800 loss 0.083370 acc 0.381834 lr 0.00001000 grad_norm 1.787559 rank 0
+2025-08-17 18:36:57,126 DEBUG TRAIN Batch 0/900 loss 0.087090 acc 0.370314 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:37:14,398 DEBUG TRAIN Batch 0/1000 loss 0.082246 acc 0.398699 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:37:30,123 DEBUG TRAIN Batch 0/1100 loss 0.094264 acc 0.323394 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:37:43,718 DEBUG TRAIN Batch 0/1200 loss 0.099730 acc 0.318230 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:37:56,793 DEBUG TRAIN Batch 0/1300 loss 0.095825 acc 0.335033 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:38:10,726 DEBUG TRAIN Batch 0/1400 loss 0.094253 acc 0.315305 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:38:28,129 DEBUG TRAIN Batch 0/1500 loss 0.081924 acc 0.374954 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:38:44,307 DEBUG TRAIN Batch 0/1600 loss 0.084072 acc 0.368964 lr 0.00001000 grad_norm 1.861229 rank 0
+2025-08-17 18:38:58,444 DEBUG TRAIN Batch 0/1700 loss 0.084839 acc 0.357699 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:39:12,273 DEBUG TRAIN Batch 0/1800 loss 0.094373 acc 0.345357 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:39:26,133 DEBUG TRAIN Batch 0/1900 loss 0.102548 acc 0.309358 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:39:39,702 DEBUG TRAIN Batch 0/2000 loss 0.098922 acc 0.328315 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:39:53,164 DEBUG TRAIN Batch 0/2100 loss 0.096883 acc 0.296601 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:40:07,520 DEBUG TRAIN Batch 0/2200 loss 0.086607 acc 0.348772 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:40:23,293 DEBUG TRAIN Batch 0/2300 loss 0.085672 acc 0.392947 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:40:38,477 DEBUG TRAIN Batch 0/2400 loss 0.090784 acc 0.337337 lr 0.00001000 grad_norm 1.481570 rank 0
+2025-08-17 18:40:53,877 DEBUG TRAIN Batch 0/2500 loss 0.088592 acc 0.338911 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:40:56,122 INFO Epoch 0 Step 79 on_batch_end True CV rank 0
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+2025-08-17 18:41:34,689 DEBUG CV Batch 0/100 loss 2.645011 acc 0.386565  rank 0
+2025-08-17 18:41:47,888 DEBUG CV Batch 0/200 loss 2.666817 acc 0.369057  rank 0
+2025-08-17 18:41:58,912 DEBUG CV Batch 0/300 loss 2.840829 acc 0.371941  rank 0
+2025-08-17 18:42:10,814 DEBUG CV Batch 0/400 loss 2.865853 acc 0.322291  rank 0
+2025-08-17 18:42:22,630 DEBUG CV Batch 0/500 loss 2.566618 acc 0.382675  rank 0
+2025-08-17 18:42:33,729 DEBUG CV Batch 0/600 loss 2.645508 acc 0.385569  rank 0
+2025-08-17 18:42:44,025 DEBUG CV Batch 0/700 loss 2.711619 acc 0.380969  rank 0
+2025-08-17 18:42:53,109 DEBUG CV Batch 0/800 loss 2.567214 acc 0.377193  rank 0
+2025-08-17 18:43:02,180 DEBUG CV Batch 0/900 loss 3.106621 acc 0.348687  rank 0
+2025-08-17 18:43:14,504 DEBUG CV Batch 0/1000 loss 3.159700 acc 0.341404  rank 0
+2025-08-17 18:43:29,436 DEBUG CV Batch 0/1100 loss 3.154204 acc 0.334393  rank 0
+2025-08-17 18:43:43,942 DEBUG CV Batch 0/1200 loss 2.902761 acc 0.350759  rank 0
+2025-08-17 18:43:52,626 DEBUG CV Batch 0/1300 loss 2.902228 acc 0.369534  rank 0
+2025-08-17 18:44:06,513 DEBUG CV Batch 0/1400 loss 2.983896 acc 0.358220  rank 0
+2025-08-17 18:44:18,991 DEBUG CV Batch 0/1500 loss 3.092350 acc 0.308977  rank 0
+2025-08-17 18:44:32,623 DEBUG CV Batch 0/1600 loss 2.959460 acc 0.327324  rank 0
+2025-08-17 18:44:46,181 DEBUG CV Batch 0/1700 loss 2.856546 acc 0.359375  rank 0
+2025-08-17 18:45:01,338 DEBUG CV Batch 0/1800 loss 2.855855 acc 0.386080  rank 0
+2025-08-17 18:45:14,572 DEBUG CV Batch 0/1900 loss 2.953675 acc 0.357168  rank 0
+2025-08-17 18:45:27,701 DEBUG CV Batch 0/2000 loss 2.957137 acc 0.336011  rank 0
+2025-08-17 18:45:41,146 DEBUG CV Batch 0/2100 loss 2.842317 acc 0.340153  rank 0
+2025-08-17 18:45:55,092 DEBUG CV Batch 0/2200 loss 2.736712 acc 0.366750  rank 0
+2025-08-17 18:46:08,680 DEBUG CV Batch 0/2300 loss 2.999227 acc 0.335635  rank 0
+2025-08-17 18:46:22,984 DEBUG CV Batch 0/2400 loss 2.958804 acc 0.337222  rank 0
+2025-08-17 18:46:34,805 DEBUG CV Batch 0/2500 loss 2.924555 acc 0.357732  rank 0
+2025-08-17 18:46:36,401 INFO Epoch 0 Step 79 CV info lr 1e-05 0 rank loss_2.925793635384099 acc_0.34777366052581
+2025-08-17 18:46:38,263 INFO [Rank 0] Checkpoint: save to checkpoint /root/gpufree-data/Marco-Voice/Models/marco_voice/exp/cosyvoice/llm/CosyVoice-300M-KO_224h/torch_ddp/epoch_0_whole.pt
+2025-08-17 18:46:38,276 INFO Epoch 1 TRAIN info lr 1e-05 rank 0
+2025-08-17 18:46:38,276 INFO using accumulate grad, new batch size is 32 times larger than before
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+2025-08-17 18:47:20,653 DEBUG TRAIN Batch 1/100 loss 0.088849 acc 0.379914 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:47:37,667 DEBUG TRAIN Batch 1/200 loss 0.081512 acc 0.379837 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:47:55,471 DEBUG TRAIN Batch 1/300 loss 0.093758 acc 0.315731 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:48:10,900 DEBUG TRAIN Batch 1/400 loss 0.078200 acc 0.414241 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:48:29,018 DEBUG TRAIN Batch 1/500 loss 0.084471 acc 0.371650 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:48:46,049 DEBUG TRAIN Batch 1/600 loss 0.081341 acc 0.384513 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:49:03,129 DEBUG TRAIN Batch 1/700 loss 0.084703 acc 0.387287 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:49:16,763 DEBUG TRAIN Batch 1/800 loss 0.092554 acc 0.324834 lr 0.00001000 grad_norm 1.474593 rank 0
+2025-08-17 18:49:30,198 DEBUG TRAIN Batch 1/900 loss 0.093621 acc 0.346852 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:49:43,049 DEBUG TRAIN Batch 1/1000 loss 0.095345 acc 0.334040 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:49:56,244 DEBUG TRAIN Batch 1/1100 loss 0.090017 acc 0.333452 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:50:09,920 DEBUG TRAIN Batch 1/1200 loss 0.088380 acc 0.355300 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:50:26,453 DEBUG TRAIN Batch 1/1300 loss 0.093090 acc 0.364214 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:50:43,406 DEBUG TRAIN Batch 1/1400 loss 0.087262 acc 0.336589 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:50:59,997 DEBUG TRAIN Batch 1/1500 loss 0.085224 acc 0.349126 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:51:17,092 DEBUG TRAIN Batch 1/1600 loss 0.089242 acc 0.331224 lr 0.00001000 grad_norm 1.428467 rank 0
+2025-08-17 18:51:34,622 DEBUG TRAIN Batch 1/1700 loss 0.091437 acc 0.343489 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:51:50,316 DEBUG TRAIN Batch 1/1800 loss 0.096707 acc 0.344701 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:52:04,742 DEBUG TRAIN Batch 1/1900 loss 0.086840 acc 0.401709 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:52:18,045 DEBUG TRAIN Batch 1/2000 loss 0.089730 acc 0.346858 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:52:31,615 DEBUG TRAIN Batch 1/2100 loss 0.094948 acc 0.304869 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:52:45,245 DEBUG TRAIN Batch 1/2200 loss 0.091724 acc 0.313422 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:52:58,654 DEBUG TRAIN Batch 1/2300 loss 0.085784 acc 0.378713 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:53:11,610 DEBUG TRAIN Batch 1/2400 loss 0.095564 acc 0.326957 lr 0.00001000 grad_norm 1.706784 rank 0
+2025-08-17 18:53:23,765 DEBUG TRAIN Batch 1/2500 loss 0.092972 acc 0.328666 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:53:25,946 INFO Epoch 1 Step 157 on_batch_end True CV rank 0
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+2025-08-17 18:54:04,874 DEBUG CV Batch 1/100 loss 2.498486 acc 0.418457  rank 0
+2025-08-17 18:54:17,575 DEBUG CV Batch 1/200 loss 2.705259 acc 0.354939  rank 0
+2025-08-17 18:54:28,653 DEBUG CV Batch 1/300 loss 2.360008 acc 0.416526  rank 0
+2025-08-17 18:54:40,715 DEBUG CV Batch 1/400 loss 2.759094 acc 0.352554  rank 0
+2025-08-17 18:54:52,665 DEBUG CV Batch 1/500 loss 2.615022 acc 0.375263  rank 0
+2025-08-17 18:55:03,754 DEBUG CV Batch 1/600 loss 2.744015 acc 0.351699  rank 0
+2025-08-17 18:55:14,007 DEBUG CV Batch 1/700 loss 2.580897 acc 0.406693  rank 0
+2025-08-17 18:55:23,132 DEBUG CV Batch 1/800 loss 2.459657 acc 0.382639  rank 0
+2025-08-17 18:55:32,168 DEBUG CV Batch 1/900 loss 2.983896 acc 0.365661  rank 0
+2025-08-17 18:55:44,238 DEBUG CV Batch 1/1000 loss 3.040589 acc 0.346415  rank 0
+2025-08-17 18:55:59,077 DEBUG CV Batch 1/1100 loss 3.077259 acc 0.327647  rank 0
+2025-08-17 18:56:13,712 DEBUG CV Batch 1/1200 loss 2.898471 acc 0.339499  rank 0
+2025-08-17 18:56:22,317 DEBUG CV Batch 1/1300 loss 3.021823 acc 0.345684  rank 0
+2025-08-17 18:56:36,244 DEBUG CV Batch 1/1400 loss 2.876426 acc 0.383713  rank 0
+2025-08-17 18:56:48,674 DEBUG CV Batch 1/1500 loss 2.892518 acc 0.326234  rank 0
+2025-08-17 18:57:03,023 DEBUG CV Batch 1/1600 loss 2.720972 acc 0.368402  rank 0
+2025-08-17 18:57:16,061 DEBUG CV Batch 1/1700 loss 2.805324 acc 0.351806  rank 0
+2025-08-17 18:57:31,476 DEBUG CV Batch 1/1800 loss 2.899651 acc 0.346638  rank 0
+2025-08-17 18:57:44,709 DEBUG CV Batch 1/1900 loss 3.094362 acc 0.316090  rank 0
+2025-08-17 18:57:57,809 DEBUG CV Batch 1/2000 loss 2.903934 acc 0.347361  rank 0
+2025-08-17 18:58:11,320 DEBUG CV Batch 1/2100 loss 2.721742 acc 0.353907  rank 0
+2025-08-17 18:58:25,557 DEBUG CV Batch 1/2200 loss 2.768429 acc 0.366909  rank 0
+2025-08-17 18:58:39,224 DEBUG CV Batch 1/2300 loss 2.804953 acc 0.359037  rank 0
+2025-08-17 18:58:53,573 DEBUG CV Batch 1/2400 loss 2.890188 acc 0.347119  rank 0
+2025-08-17 18:59:04,974 DEBUG CV Batch 1/2500 loss 2.882256 acc 0.346643  rank 0
+2025-08-17 18:59:06,793 INFO Epoch 1 Step 157 CV info lr 1e-05 0 rank loss_2.851951179107874 acc_0.3510316267886587
+2025-08-17 18:59:08,724 INFO [Rank 0] Checkpoint: save to checkpoint /root/gpufree-data/Marco-Voice/Models/marco_voice/exp/cosyvoice/llm/CosyVoice-300M-KO_224h/torch_ddp/epoch_1_whole.pt
+2025-08-17 18:59:08,746 INFO Epoch 2 TRAIN info lr 1e-05 rank 0
+2025-08-17 18:59:08,746 INFO using accumulate grad, new batch size is 32 times larger than before
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+2025-08-17 18:59:37,102 DEBUG TRAIN Batch 2/100 loss 0.091120 acc 0.355351 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 18:59:50,648 DEBUG TRAIN Batch 2/200 loss 0.092026 acc 0.307555 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:00:03,572 DEBUG TRAIN Batch 2/300 loss 0.088469 acc 0.345379 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:00:22,396 DEBUG TRAIN Batch 2/400 loss 0.093829 acc 0.351449 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:00:38,711 DEBUG TRAIN Batch 2/500 loss 0.089776 acc 0.342391 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:00:54,353 DEBUG TRAIN Batch 2/600 loss 0.084306 acc 0.418260 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:01:09,354 DEBUG TRAIN Batch 2/700 loss 0.088477 acc 0.346046 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:01:24,183 DEBUG TRAIN Batch 2/800 loss 0.087163 acc 0.345387 lr 0.00001000 grad_norm 1.362913 rank 0
+2025-08-17 19:01:39,888 DEBUG TRAIN Batch 2/900 loss 0.091873 acc 0.346651 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:01:57,731 DEBUG TRAIN Batch 2/1000 loss 0.086080 acc 0.358833 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:02:13,769 DEBUG TRAIN Batch 2/1100 loss 0.086487 acc 0.351164 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:02:29,966 DEBUG TRAIN Batch 2/1200 loss 0.095167 acc 0.334677 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:02:43,318 DEBUG TRAIN Batch 2/1300 loss 0.087779 acc 0.341943 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:02:56,803 DEBUG TRAIN Batch 2/1400 loss 0.092739 acc 0.347292 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:03:10,256 DEBUG TRAIN Batch 2/1500 loss 0.086234 acc 0.347227 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:03:23,509 DEBUG TRAIN Batch 2/1600 loss 0.085469 acc 0.349494 lr 0.00001000 grad_norm 1.461997 rank 0
+2025-08-17 19:03:36,740 DEBUG TRAIN Batch 2/1700 loss 0.088980 acc 0.322732 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:03:54,552 DEBUG TRAIN Batch 2/1800 loss 0.084468 acc 0.343193 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:04:10,779 DEBUG TRAIN Batch 2/1900 loss 0.076485 acc 0.412154 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:04:28,242 DEBUG TRAIN Batch 2/2000 loss 0.073564 acc 0.404618 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:04:46,606 DEBUG TRAIN Batch 2/2100 loss 0.076365 acc 0.413669 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:05:02,378 DEBUG TRAIN Batch 2/2200 loss 0.094193 acc 0.329714 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:05:18,272 DEBUG TRAIN Batch 2/2300 loss 0.090358 acc 0.317466 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:05:33,892 DEBUG TRAIN Batch 2/2400 loss 0.090879 acc 0.338953 lr 0.00001000 grad_norm 1.451476 rank 0
+2025-08-17 19:05:48,323 DEBUG TRAIN Batch 2/2500 loss 0.078896 acc 0.389937 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:05:50,865 INFO Epoch 2 Step 235 on_batch_end True CV rank 0
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+2025-08-17 19:06:29,659 DEBUG CV Batch 2/100 loss 2.481366 acc 0.392829  rank 0
+2025-08-17 19:06:42,424 DEBUG CV Batch 2/200 loss 2.544865 acc 0.382857  rank 0
+2025-08-17 19:06:53,489 DEBUG CV Batch 2/300 loss 2.795969 acc 0.368584  rank 0
+2025-08-17 19:07:05,733 DEBUG CV Batch 2/400 loss 2.738707 acc 0.362749  rank 0
+2025-08-17 19:07:17,644 DEBUG CV Batch 2/500 loss 2.519627 acc 0.385220  rank 0
+2025-08-17 19:07:28,922 DEBUG CV Batch 2/600 loss 2.555745 acc 0.372389  rank 0
+2025-08-17 19:07:39,123 DEBUG CV Batch 2/700 loss 2.542316 acc 0.379060  rank 0
+2025-08-17 19:07:48,216 DEBUG CV Batch 2/800 loss 2.487732 acc 0.368329  rank 0
+2025-08-17 19:07:57,254 DEBUG CV Batch 2/900 loss 2.902130 acc 0.357498  rank 0
+2025-08-17 19:08:09,938 DEBUG CV Batch 2/1000 loss 2.945578 acc 0.352630  rank 0
+2025-08-17 19:08:24,982 DEBUG CV Batch 2/1100 loss 3.002967 acc 0.330295  rank 0
+2025-08-17 19:08:40,165 DEBUG CV Batch 2/1200 loss 2.914992 acc 0.343558  rank 0
+2025-08-17 19:08:48,843 DEBUG CV Batch 2/1300 loss 2.865018 acc 0.360991  rank 0
+2025-08-17 19:09:02,928 DEBUG CV Batch 2/1400 loss 2.735375 acc 0.369312  rank 0
+2025-08-17 19:09:15,785 DEBUG CV Batch 2/1500 loss 2.804504 acc 0.339335  rank 0
+2025-08-17 19:09:29,358 DEBUG CV Batch 2/1600 loss 2.763525 acc 0.357636  rank 0
+2025-08-17 19:09:43,581 DEBUG CV Batch 2/1700 loss 2.804817 acc 0.355476  rank 0
+2025-08-17 19:09:58,820 DEBUG CV Batch 2/1800 loss 2.766814 acc 0.359547  rank 0
+2025-08-17 19:10:12,010 DEBUG CV Batch 2/1900 loss 2.927281 acc 0.333914  rank 0
+2025-08-17 19:10:24,993 DEBUG CV Batch 2/2000 loss 2.865539 acc 0.340381  rank 0
+2025-08-17 19:10:38,386 DEBUG CV Batch 2/2100 loss 2.779326 acc 0.334521  rank 0
+2025-08-17 19:10:52,366 DEBUG CV Batch 2/2200 loss 2.582142 acc 0.374956  rank 0
+2025-08-17 19:11:05,825 DEBUG CV Batch 2/2300 loss 2.785730 acc 0.346496  rank 0
+2025-08-17 19:11:20,190 DEBUG CV Batch 2/2400 loss 2.818966 acc 0.354412  rank 0
+2025-08-17 19:11:30,719 DEBUG CV Batch 2/2500 loss 2.805361 acc 0.358470  rank 0
+2025-08-17 19:11:32,262 INFO Epoch 2 Step 235 CV info lr 1e-05 0 rank loss_2.7865199398440157 acc_0.35449258891010815
+2025-08-17 19:11:34,157 INFO [Rank 0] Checkpoint: save to checkpoint /root/gpufree-data/Marco-Voice/Models/marco_voice/exp/cosyvoice/llm/CosyVoice-300M-KO_224h/torch_ddp/epoch_2_whole.pt
+2025-08-17 19:11:34,173 INFO Epoch 3 TRAIN info lr 1e-05 rank 0
+2025-08-17 19:11:34,173 INFO using accumulate grad, new batch size is 32 times larger than before
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+2025-08-17 19:12:03,753 DEBUG TRAIN Batch 3/100 loss 0.082294 acc 0.360400 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:12:25,544 DEBUG TRAIN Batch 3/200 loss 0.093470 acc 0.339497 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:12:42,667 DEBUG TRAIN Batch 3/300 loss 0.089188 acc 0.326367 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:12:59,865 DEBUG TRAIN Batch 3/400 loss 0.080872 acc 0.378242 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:13:13,549 DEBUG TRAIN Batch 3/500 loss 0.085088 acc 0.356475 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:13:30,844 DEBUG TRAIN Batch 3/600 loss 0.088108 acc 0.383587 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:13:48,090 DEBUG TRAIN Batch 3/700 loss 0.080216 acc 0.393369 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:14:09,605 DEBUG TRAIN Batch 3/800 loss 0.082774 acc 0.361823 lr 0.00001000 grad_norm 1.256363 rank 0
+2025-08-17 19:14:25,650 DEBUG TRAIN Batch 3/900 loss 0.077781 acc 0.376344 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:14:42,771 DEBUG TRAIN Batch 3/1000 loss 0.092314 acc 0.357732 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:14:56,300 DEBUG TRAIN Batch 3/1100 loss 0.091801 acc 0.330062 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:15:09,580 DEBUG TRAIN Batch 3/1200 loss 0.091908 acc 0.349206 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:15:23,252 DEBUG TRAIN Batch 3/1300 loss 0.089579 acc 0.311435 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:15:36,488 DEBUG TRAIN Batch 3/1400 loss 0.090767 acc 0.343235 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:15:49,714 DEBUG TRAIN Batch 3/1500 loss 0.084017 acc 0.355407 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:16:02,826 DEBUG TRAIN Batch 3/1600 loss 0.085069 acc 0.371629 lr 0.00001000 grad_norm 1.437447 rank 0
+2025-08-17 19:16:16,300 DEBUG TRAIN Batch 3/1700 loss 0.083846 acc 0.353367 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:16:29,620 DEBUG TRAIN Batch 3/1800 loss 0.088226 acc 0.344280 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:16:43,051 DEBUG TRAIN Batch 3/1900 loss 0.083548 acc 0.356688 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:16:59,056 DEBUG TRAIN Batch 3/2000 loss 0.084808 acc 0.354319 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:17:14,893 DEBUG TRAIN Batch 3/2100 loss 0.083344 acc 0.352917 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:17:32,641 DEBUG TRAIN Batch 3/2200 loss 0.084950 acc 0.344417 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:17:48,593 DEBUG TRAIN Batch 3/2300 loss 0.087137 acc 0.355040 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:18:04,918 DEBUG TRAIN Batch 3/2400 loss 0.087670 acc 0.314872 lr 0.00001000 grad_norm 1.475513 rank 0
+2025-08-17 19:18:17,742 DEBUG TRAIN Batch 3/2500 loss 0.084856 acc 0.349047 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:18:19,837 INFO Epoch 3 Step 313 on_batch_end True CV rank 0
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+2025-08-17 19:18:57,746 DEBUG CV Batch 3/100 loss 2.416777 acc 0.430605  rank 0
+2025-08-17 19:19:10,448 DEBUG CV Batch 3/200 loss 2.676669 acc 0.352377  rank 0
+2025-08-17 19:19:21,578 DEBUG CV Batch 3/300 loss 2.210394 acc 0.460870  rank 0
+2025-08-17 19:19:34,261 DEBUG CV Batch 3/400 loss 2.730159 acc 0.345660  rank 0
+2025-08-17 19:19:46,280 DEBUG CV Batch 3/500 loss 2.468324 acc 0.383040  rank 0
+2025-08-17 19:19:57,333 DEBUG CV Batch 3/600 loss 2.774872 acc 0.361467  rank 0
+2025-08-17 19:20:07,512 DEBUG CV Batch 3/700 loss 2.534714 acc 0.377855  rank 0
+2025-08-17 19:20:16,525 DEBUG CV Batch 3/800 loss 2.473980 acc 0.384101  rank 0
+2025-08-17 19:20:25,535 DEBUG CV Batch 3/900 loss 2.788565 acc 0.369073  rank 0
+2025-08-17 19:20:37,714 DEBUG CV Batch 3/1000 loss 2.840059 acc 0.366513  rank 0
+2025-08-17 19:20:52,310 DEBUG CV Batch 3/1100 loss 3.147246 acc 0.303239  rank 0
+2025-08-17 19:21:06,691 DEBUG CV Batch 3/1200 loss 2.804446 acc 0.346278  rank 0
+2025-08-17 19:21:15,280 DEBUG CV Batch 3/1300 loss 2.718945 acc 0.370514  rank 0
+2025-08-17 19:21:29,055 DEBUG CV Batch 3/1400 loss 2.608118 acc 0.384335  rank 0
+2025-08-17 19:21:41,792 DEBUG CV Batch 3/1500 loss 2.803205 acc 0.330087  rank 0
+2025-08-17 19:21:57,125 DEBUG CV Batch 3/1600 loss 2.676755 acc 0.355067  rank 0
+2025-08-17 19:22:08,912 DEBUG CV Batch 3/1700 loss 2.688505 acc 0.360702  rank 0
+2025-08-17 19:22:24,133 DEBUG CV Batch 3/1800 loss 2.733493 acc 0.360445  rank 0
+2025-08-17 19:22:37,562 DEBUG CV Batch 3/1900 loss 2.806018 acc 0.342725  rank 0
+2025-08-17 19:22:50,546 DEBUG CV Batch 3/2000 loss 2.732903 acc 0.335488  rank 0
+2025-08-17 19:23:03,973 DEBUG CV Batch 3/2100 loss 2.662827 acc 0.348944  rank 0
+2025-08-17 19:23:17,952 DEBUG CV Batch 3/2200 loss 2.597456 acc 0.364565  rank 0
+2025-08-17 19:23:31,574 DEBUG CV Batch 3/2300 loss 2.768835 acc 0.318480  rank 0
+2025-08-17 19:23:46,428 DEBUG CV Batch 3/2400 loss 2.741938 acc 0.364966  rank 0
+2025-08-17 19:23:58,162 DEBUG CV Batch 3/2500 loss 2.748591 acc 0.343184  rank 0
+2025-08-17 19:23:59,402 INFO Epoch 3 Step 313 CV info lr 1e-05 0 rank loss_2.7331134181066346 acc_0.35620026745406347
+2025-08-17 19:24:01,313 INFO [Rank 0] Checkpoint: save to checkpoint /root/gpufree-data/Marco-Voice/Models/marco_voice/exp/cosyvoice/llm/CosyVoice-300M-KO_224h/torch_ddp/epoch_3_whole.pt
+2025-08-17 19:24:01,327 INFO Epoch 4 TRAIN info lr 1e-05 rank 0
+2025-08-17 19:24:01,327 INFO using accumulate grad, new batch size is 32 times larger than before
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+2025-08-17 19:24:29,249 DEBUG TRAIN Batch 4/100 loss 0.081476 acc 0.356257 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:24:43,354 DEBUG TRAIN Batch 4/200 loss 0.091956 acc 0.327910 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:24:58,989 DEBUG TRAIN Batch 4/300 loss 0.085163 acc 0.338995 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:25:21,038 DEBUG TRAIN Batch 4/400 loss 0.085749 acc 0.339465 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:25:37,871 DEBUG TRAIN Batch 4/500 loss 0.084653 acc 0.340165 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:25:53,203 DEBUG TRAIN Batch 4/600 loss 0.084016 acc 0.335709 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:26:08,638 DEBUG TRAIN Batch 4/700 loss 0.085955 acc 0.338308 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:26:21,755 DEBUG TRAIN Batch 4/800 loss 0.091924 acc 0.324753 lr 0.00001000 grad_norm 1.471281 rank 0
+2025-08-17 19:26:35,802 DEBUG TRAIN Batch 4/900 loss 0.089373 acc 0.335689 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:26:52,735 DEBUG TRAIN Batch 4/1000 loss 0.087587 acc 0.340885 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:27:09,569 DEBUG TRAIN Batch 4/1100 loss 0.090733 acc 0.321121 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:27:22,220 DEBUG TRAIN Batch 4/1200 loss 0.087455 acc 0.356371 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:27:35,166 DEBUG TRAIN Batch 4/1300 loss 0.084353 acc 0.328454 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:27:48,244 DEBUG TRAIN Batch 4/1400 loss 0.077021 acc 0.385568 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:28:03,050 DEBUG TRAIN Batch 4/1500 loss 0.084410 acc 0.354986 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:28:18,516 DEBUG TRAIN Batch 4/1600 loss 0.081516 acc 0.351140 lr 0.00001000 grad_norm 1.195378 rank 0
+2025-08-17 19:28:36,757 DEBUG TRAIN Batch 4/1700 loss 0.084707 acc 0.349964 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:28:54,504 DEBUG TRAIN Batch 4/1800 loss 0.086838 acc 0.360799 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:29:09,102 DEBUG TRAIN Batch 4/1900 loss 0.079238 acc 0.365331 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:29:23,841 DEBUG TRAIN Batch 4/2000 loss 0.085113 acc 0.364569 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:29:40,733 DEBUG TRAIN Batch 4/2100 loss 0.086880 acc 0.335443 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:29:57,811 DEBUG TRAIN Batch 4/2200 loss 0.084252 acc 0.358925 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:30:16,296 DEBUG TRAIN Batch 4/2300 loss 0.078343 acc 0.372481 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:30:29,695 DEBUG TRAIN Batch 4/2400 loss 0.078758 acc 0.390951 lr 0.00001000 grad_norm 1.472019 rank 0
+2025-08-17 19:30:51,971 DEBUG TRAIN Batch 4/2500 loss 0.084989 acc 0.368550 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:30:54,457 INFO Epoch 4 Step 391 on_batch_end True CV rank 0
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+2025-08-17 19:31:33,935 DEBUG CV Batch 4/100 loss 2.869765 acc 0.379424  rank 0
+2025-08-17 19:31:46,506 DEBUG CV Batch 4/200 loss 2.501976 acc 0.371031  rank 0
+2025-08-17 19:31:57,940 DEBUG CV Batch 4/300 loss 2.353197 acc 0.410996  rank 0
+2025-08-17 19:32:10,420 DEBUG CV Batch 4/400 loss 2.668893 acc 0.350960  rank 0
+2025-08-17 19:32:22,416 DEBUG CV Batch 4/500 loss 2.485243 acc 0.383939  rank 0
+2025-08-17 19:32:33,649 DEBUG CV Batch 4/600 loss 2.428637 acc 0.385072  rank 0
+2025-08-17 19:32:43,908 DEBUG CV Batch 4/700 loss 2.447289 acc 0.390174  rank 0
+2025-08-17 19:32:53,042 DEBUG CV Batch 4/800 loss 2.387438 acc 0.386676  rank 0
+2025-08-17 19:33:02,161 DEBUG CV Batch 4/900 loss 2.736948 acc 0.369463  rank 0
+2025-08-17 19:33:15,386 DEBUG CV Batch 4/1000 loss 2.798746 acc 0.369724  rank 0
+2025-08-17 19:33:30,537 DEBUG CV Batch 4/1100 loss 3.010050 acc 0.313808  rank 0
+2025-08-17 19:33:45,344 DEBUG CV Batch 4/1200 loss 2.744226 acc 0.346462  rank 0
+2025-08-17 19:33:54,010 DEBUG CV Batch 4/1300 loss 2.693598 acc 0.368006  rank 0
+2025-08-17 19:34:08,252 DEBUG CV Batch 4/1400 loss 2.540041 acc 0.395908  rank 0
+2025-08-17 19:34:20,407 DEBUG CV Batch 4/1500 loss 2.775072 acc 0.342687  rank 0
+2025-08-17 19:34:33,445 DEBUG CV Batch 4/1600 loss 2.689283 acc 0.356164  rank 0
+2025-08-17 19:34:47,316 DEBUG CV Batch 4/1700 loss 2.642678 acc 0.363898  rank 0
+2025-08-17 19:35:01,868 DEBUG CV Batch 4/1800 loss 2.641443 acc 0.370254  rank 0
+2025-08-17 19:35:15,043 DEBUG CV Batch 4/1900 loss 2.779800 acc 0.327103  rank 0
+2025-08-17 19:35:27,615 DEBUG CV Batch 4/2000 loss 2.665991 acc 0.358451  rank 0
+2025-08-17 19:35:40,801 DEBUG CV Batch 4/2100 loss 2.676877 acc 0.343631  rank 0
+2025-08-17 19:35:54,616 DEBUG CV Batch 4/2200 loss 2.546584 acc 0.359790  rank 0
+2025-08-17 19:36:08,299 DEBUG CV Batch 4/2300 loss 2.722907 acc 0.354571  rank 0
+2025-08-17 19:36:23,085 DEBUG CV Batch 4/2400 loss 2.726081 acc 0.355679  rank 0
+2025-08-17 19:36:33,385 DEBUG CV Batch 4/2500 loss 2.693423 acc 0.359244  rank 0
+2025-08-17 19:36:34,891 INFO Epoch 4 Step 391 CV info lr 1e-05 0 rank loss_2.6861698740767967 acc_0.3581915604509905
+2025-08-17 19:36:36,880 INFO [Rank 0] Checkpoint: save to checkpoint /root/gpufree-data/Marco-Voice/Models/marco_voice/exp/cosyvoice/llm/CosyVoice-300M-KO_224h/torch_ddp/epoch_4_whole.pt
+2025-08-17 19:36:36,897 INFO Epoch 5 TRAIN info lr 1e-05 rank 0
+2025-08-17 19:36:36,897 INFO using accumulate grad, new batch size is 32 times larger than before
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+2025-08-17 19:37:07,039 DEBUG TRAIN Batch 5/100 loss 0.086580 acc 0.344704 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:37:20,729 DEBUG TRAIN Batch 5/200 loss 0.085682 acc 0.342586 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:37:34,754 DEBUG TRAIN Batch 5/300 loss 0.092292 acc 0.324091 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:37:48,630 DEBUG TRAIN Batch 5/400 loss 0.085991 acc 0.334163 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:38:01,904 DEBUG TRAIN Batch 5/500 loss 0.088691 acc 0.346487 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:38:14,838 DEBUG TRAIN Batch 5/600 loss 0.088052 acc 0.332746 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:38:32,979 DEBUG TRAIN Batch 5/700 loss 0.084682 acc 0.333212 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:38:48,405 DEBUG TRAIN Batch 5/800 loss 0.082829 acc 0.373443 lr 0.00001000 grad_norm 1.372556 rank 0
+2025-08-17 19:39:03,457 DEBUG TRAIN Batch 5/900 loss 0.088193 acc 0.343056 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:39:17,882 DEBUG TRAIN Batch 5/1000 loss 0.076787 acc 0.403680 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:39:32,207 DEBUG TRAIN Batch 5/1100 loss 0.079038 acc 0.418972 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:39:45,051 DEBUG TRAIN Batch 5/1200 loss 0.080982 acc 0.358357 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:40:01,720 DEBUG TRAIN Batch 5/1300 loss 0.083835 acc 0.334421 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:40:17,296 DEBUG TRAIN Batch 5/1400 loss 0.082377 acc 0.367102 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:40:32,913 DEBUG TRAIN Batch 5/1500 loss 0.086211 acc 0.345520 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:40:48,654 DEBUG TRAIN Batch 5/1600 loss 0.087986 acc 0.363861 lr 0.00001000 grad_norm 1.434388 rank 0
+2025-08-17 19:41:03,819 DEBUG TRAIN Batch 5/1700 loss 0.081584 acc 0.354630 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:41:16,590 DEBUG TRAIN Batch 5/1800 loss 0.088484 acc 0.361172 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:41:32,385 DEBUG TRAIN Batch 5/1900 loss 0.079609 acc 0.369373 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:41:48,246 DEBUG TRAIN Batch 5/2000 loss 0.073223 acc 0.410593 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:42:05,901 DEBUG TRAIN Batch 5/2100 loss 0.076758 acc 0.363806 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:42:26,333 DEBUG TRAIN Batch 5/2200 loss 0.074964 acc 0.384294 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:42:44,694 DEBUG TRAIN Batch 5/2300 loss 0.085532 acc 0.352607 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:43:00,401 DEBUG TRAIN Batch 5/2400 loss 0.081407 acc 0.361894 lr 0.00001000 grad_norm 1.257434 rank 0
+2025-08-17 19:43:16,855 DEBUG TRAIN Batch 5/2500 loss 0.080105 acc 0.389332 lr 0.00001000 grad_norm 0.000000 rank 0
+2025-08-17 19:43:19,451 INFO Epoch 5 Step 469 on_batch_end True CV rank 0
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/tokenizer.py:333: ResourceWarning: unclosed file <_io.TextIOWrapper name='/root/gpufree-data/miniconda3/envs/marco/lib/python3.10/site-packages/whisper/assets/multilingual.tiktoken' mode='r' encoding='UTF-8'>
+  ranks = {
+2025-08-17 19:43:58,824 DEBUG CV Batch 5/100 loss 2.446669 acc 0.379747  rank 0
+2025-08-17 19:44:11,463 DEBUG CV Batch 5/200 loss 2.726999 acc 0.331752  rank 0
+2025-08-17 19:44:22,651 DEBUG CV Batch 5/300 loss 2.331888 acc 0.416278  rank 0
+2025-08-17 19:44:36,018 DEBUG CV Batch 5/400 loss 2.853844 acc 0.303410  rank 0
+2025-08-17 19:44:47,807 DEBUG CV Batch 5/500 loss 2.498507 acc 0.372276  rank 0
+2025-08-17 19:44:58,983 DEBUG CV Batch 5/600 loss 2.478968 acc 0.400305  rank 0
+2025-08-17 19:45:09,255 DEBUG CV Batch 5/700 loss 2.471617 acc 0.372664  rank 0
+2025-08-17 19:45:18,360 DEBUG CV Batch 5/800 loss 2.326242 acc 0.394284  rank 0
+2025-08-17 19:45:27,532 DEBUG CV Batch 5/900 loss 2.586720 acc 0.377786  rank 0
+2025-08-17 19:45:41,825 DEBUG CV Batch 5/1000 loss 2.737298 acc 0.361198  rank 0
+2025-08-17 19:45:57,069 DEBUG CV Batch 5/1100 loss 2.959003 acc 0.319931  rank 0
+2025-08-17 19:46:11,650 DEBUG CV Batch 5/1200 loss 2.703509 acc 0.351313  rank 0

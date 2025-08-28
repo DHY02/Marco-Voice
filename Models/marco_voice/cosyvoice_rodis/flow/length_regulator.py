@@ -60,6 +60,9 @@ class InterpolateRegulator(nn.Module):
             x2_tail = F.interpolate(x2[:, -20:].transpose(1, 2).contiguous(), size=int(20 / input_frame_rate * 22050 / 256), mode='linear')
             x2 = torch.concat([x2_head, x2_mid, x2_tail], dim=2)
         else:
+            print(f"Debug: x2.shape={x2.shape}, mel_len2={mel_len2}, Marco-Voice/Models/marco_voice/cosyvoice_rodis/flow/length_regulator.py")
+            if x2.size(-1) == 0 or mel_len2 == 0:
+                print("Warning: Empty tensor, using dummy output")
             x2 = F.interpolate(x2.transpose(1, 2).contiguous(), size=mel_len2, mode='linear')
         if x1.shape[1] != 0:
             x1 = F.interpolate(x1.transpose(1, 2).contiguous(), size=mel_len1, mode='linear')
